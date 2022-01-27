@@ -1,0 +1,211 @@
+PHO3	YBR092C	PHO3	Constitutively expressed acid phosphatase similar to Pho5p; brought to the cell surface by transport vesicles; hydrolyzes thiamin phosphates in the periplasmic space, increasing cellular thiamin uptake; expression is repressed by thiamin
+PHO5	YBR093C	PHO5	Repressible acid phosphatase (1 of 3) that also mediates extracellular nucleotide-derived phosphate hydrolysis; secretory pathway derived cell surface glycoprotein; induced by phosphate starvation and coordinately regulated by PHO4 and PHO2
+MRPS5	YBR251W	MRPS5	Mitochondrial ribosomal protein of the small subunit
+MRPL27	YBR282W	MRPL27	Mitochondrial ribosomal protein of the large subunit
+CTP1	YBR291C	CTP1	Mitochondrial inner membrane citrate transporter, member of the mitochondrial carrier family
+PHO89	YBR296C	PHO89	Na+/Pi cotransporter, active in early growth phase; similar to phosphate transporters of Neurospora crassa; transcription regulated by inorganic phosphate concentrations and Pho4p
+MAL33	YBR297W	MAL33	MAL-activator protein, part of complex locus MAL3; nonfunctional in genomic reference strain S288C
+MAL31	YBR298C	MAL31	Maltose permease, high-affinity maltose transporter (alpha-glucoside transporter); encoded in the MAL3 complex locus; member of the 12 transmembrane domain superfamily of sugar transporters; functional in genomic reference strain S288C
+MAL32	YBR299W	MAL32	Maltase (alpha-D-glucosidase), inducible protein involved in maltose catabolism; encoded in the MAL3 complex locus; functional in genomic reference strain S288C; hydrolyzes the disaccharides maltose, turanose, maltotriose, and sucrose
+FUS1	YCL027W	FUS1	Membrane protein localized to the shmoo tip, required for cell fusion; expression regulated by mating pheromone; proposed to coordinate signaling, fusion, and polarization events required for fusion; potential Cdc28p substrate
+SOR2	YDL246C	SOR2	Protein of unknown function; protein sequence is 99% identical to the Sor1p sorbitol dehydrogenase; computational analysis of large-scale protein-protein interaction data also suggests a role in fructose or mannose metabolism
+HXT15	YDL245C	HXT15	Protein of unknown function with similarity to hexose transporter family members, expression is induced by low levels of glucose and repressed by high levels of glucose
+YDL242W	YDL242W	YDL242W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data
+GGC1	YDL198C	GGC1	Mitochondrial GTP/GDP transporter, essential for mitochondrial genome maintenance; has a role in mitochondrial iron transport; member of the mitochondrial carrier family
+SNF3	YDL194W	SNF3	Plasma membrane low glucose sensor that regulates glucose transport; contains 12 predicted transmembrane segments and a long C-terminal tail required for induction of hexose transporters; also senses fructose and mannose; similar to Rgt2p
+MRK1	YDL079C	MRK1	Glycogen synthase kinase 3 (GSK-3) homolog; one of four GSK-3 homologs in S. cerevisiae that function to activate Msn2p-dependent transcription of stress responsive genes and that function in protein degradation
+STP4	YDL048C	STP4	Protein containing a Kruppel-type zinc-finger domain; has similarity to Stp1p, Stp2p, and Stp3p
+MRP10	YDL045W-A	MRP10	Mitochondrial ribosomal protein of the small subunit; contains twin cysteine-x9-cysteine motifs
+YDR018C	YDR018C	YDR018C	Probable membrane protein with three predicted transmembrane domains; homologous to Ybr042cp, similar to C. elegans F55A11.5 and maize 1-acyl-glycerol-3-phosphate acyltransferase
+ENA1	YDR040C	ENA1	P-type ATPase sodium pump, involved in Na+ and Li+ efflux to allow salt tolerance
+AFR1	YDR085C	AFR1	Protein required for pheromone-induced projection (shmoo) formation; regulates septin architecture during mating; has an RVXF motif that mediates targeting of Glc7p to mating projections; interacts with Cdc12p
+RLI1	YDR091C	RLI1	Essential iron-sulfur protein required for ribosome biogenesis and translation initiation and termination; facilitates binding of a multifactor complex (MFC) of initiation factors to the small ribosomal subunit; predicted ABC family ATPase
+ADR1	YDR216W	ADR1	Carbon source-responsive zinc-finger transcription factor, required for transcription of the glucose-repressed gene ADH2, of peroxisomal protein genes, and of genes required for ethanol, glycerol, and fatty acid utilization
+MTH1	YDR277C	MTH1	Negative regulator of the glucose-sensing signal transduction pathway, required for repression of transcription by Rgt1p; interacts with Rgt1p and the Snf3p and Rgt2p glucose sensors; phosphorylated by Yck1p, triggering Mth1p degradation
+PHM6	YDR281C	PHM6	Protein of unknown function, expression is regulated by phosphate levels
+SUR2	YDR297W	SUR2	Sphinganine C4-hydroxylase, catalyses the conversion of sphinganine to phytosphingosine in sphingolipid biosyntheis
+TIM11	YDR322C-A	TIM11	Subunit e of mitochondrial F1F0-ATPase, which is a large, evolutionarily conserved enzyme complex required for ATP synthesis; essential for the dimeric and oligomeric state of ATP synthase
+HXT7	YDR342C	HXT7	High-affinity glucose transporter of the major facilitator superfamily, nearly identical to Hxt6p, expressed at high basal levels relative to other HXTs, expression repressed by high glucose levels
+HXT6	YDR343C	HXT6	High-affinity glucose transporter of the major facilitator superfamily, nearly identical to Hxt7p, expressed at high basal levels relative to other HXTs, repression of expression by high glucose requires SNF3
+HXT3	YDR345C	HXT3	Low affinity glucose transporter of the major facilitator superfamily, expression is induced in low or high glucose conditions
+ARO10	YDR380W	ARO10	Phenylpyruvate decarboxylase, catalyzes decarboxylation of phenylpyruvate to phenylacetaldehyde, which is the first specific step in the Ehrlich pathway
+PDR15	YDR406W	PDR15	Plasma membrane ATP binding cassette (ABC) transporter, multidrug transporter and general stress response factor implicated in cellular detoxification; regulated by Pdr1p, Pdr3p and Pdr8p; promoter contains a PDR responsive element
+APT2	YDR441C	APT2	Apparent pseudogene, not transcribed or translated under normal conditions; encodes a protein with similarity to adenine phosphoribosyltransferase, but artificially expressed protein exhibits no enzymatic activity
+URC2	YDR520C	URC2	Putative Zn(II)2Cys6 motif containing transcription factor; non-essential gene identified in a screen for mutants with increased levels of rDNA transcription; similar to S. kluyveri Urc2p involved in uracil catabolism
+HXT13	YEL069C	HXT13	Hexose transporter, induced in the presence of non-fermentable carbon sources, induced by low levels of glucose, repressed by high levels of glucose
+SIT1	YEL065W	SIT1	Ferrioxamine B transporter, member of the ARN family of transporters that specifically recognize siderophore-iron chelates; transcription is induced during iron deprivation and diauxic shift; potentially phosphorylated by Cdc28p
+PRB1	YEL060C	PRB1	Vacuolar proteinase B (yscB), a serine protease of the subtilisin family; involved in protein degradation in the vacuole and required for full protein degradation during sporulation; activity inhibited by Pbi2p
+PCM1	YEL058W	PCM1	Essential N-acetylglucosamine-phosphate mutase; converts GlcNAc-6-P to GlcNAc-1-P, which is a precursor for the biosynthesis of chitin and for the formation of N-glycosylated mannoproteins and glycosylphosphatidylinositol anchors
+ERG28	YER044C	ERG28	Endoplasmic reticulum membrane protein, may facilitate protein-protein interactions between the Erg26p dehydrogenase and the Erg27p 3-ketoreductase and/or tether these enzymes to the ER, also interacts with Erg6p
+RSM18	YER050C	RSM18	Mitochondrial ribosomal protein of the small subunit, has similarity to E. coli S18 ribosomal protein
+PET117	YER058W	PET117	Protein required for assembly of cytochrome c oxidase
+VTC1	YER072W	VTC1	Subunit of the vacuolar transporter chaperone (VTC) complex involved in membrane trafficking, vacuolar polyphosphate accumulation, microautophagy and non-autophagic vacuolar fusion; also has mRNA binding activity
+MET6	YER091C	MET6	Cobalamin-independent methionine synthase, involved in methionine biosynthesis and regeneration; requires a minimum of two glutamates on the methyltetrahydrofolate substrate, similar to bacterial metE homologs
+OXA1	YER154W	OXA1	Mitochondrial inner membrane insertase, mediates the insertion of both mitochondrial- and nuclear-encoded proteins from the matrix into the inner membrane, interacts with mitochondrial ribosomes; conserved from bacteria to animals
+AQY3	YFL054C	AQY3	Putative channel-like protein; similar to Fps1p; mediates passive diffusion of glycerol in the presence of ethanol
+ZNF1	YFL052W	ZNF1	Putative zinc cluster protein that contains a DNA binding domain; null mutant sensitive to calcofluor white, low osmolarity and heat, suggesting a role for YFL052Wp in cell wall integrity
+YFL051C	YFL051C	YFL051C	Putative protein of unknown function; YFL051C is not an essential gene
+RPO41	YFL036W	RPO41	Mitochondrial RNA polymerase; single subunit enzyme similar to those of T3 and T7 bacteriophages; requires a specificity subunit encoded by MTF1 for promoter recognition
+HXT10	YFL011W	HXT10	Putative hexose transporter, expressed at low levels and expression is repressed by glucose
+VTC2	YFL004W	VTC2	Subunit of the vacuolar transporter chaperone (VTC) complex involved in membrane trafficking, vacuolar polyphosphate accumulation, microautophagy and non-autophagic vacuolar fusion
+GSY1	YFR015C	GSY1	Glycogen synthase with similarity to Gsy2p, the more highly expressed yeast homolog; expression induced by glucose limitation, nitrogen starvation, environmental stress, and entry into stationary phase
+HXK1	YFR053C	HXK1	Hexokinase isoenzyme 1, a cytosolic protein that catalyzes phosphorylation of glucose during glucose metabolism; expression is highest during growth on non-glucose carbon sources; glucose-induced repression involves the hexokinase Hxk2p
+HXK2	YGL253W	HXK2	Hexokinase isoenzyme 2 that catalyzes phosphorylation of glucose in the cytosol; predominant hexokinase during growth on glucose; functions in the nucleus to repress expression of HXK1 and GLK1 and to induce expression of its own gene
+ARI1	YGL157W	ARI1	NADPH-dependent aldehyde reductase, utilizes aromatic and alophatic aldehyde substrates; member of the short-chain dehydrogenase/reductase superfamily
+CEG1	YGL130W	CEG1	Alpha (guanylyltransferase) subunit of the mRNA capping enzyme, a heterodimer (the other subunit is CET1, an RNA 5'-triphosphatase) involved in adding the 5' cap to mRNA; the mammalian enzyme is a single bifunctional polypeptide
+MIG1	YGL035C	MIG1	Transcription factor involved in glucose repression; sequence specific DNA binding protein containing two Cys2His2 zinc finger motifs; regulated by the SNF1 kinase and the GLC7 phosphatase
+AGA2	YGL032C	AGA2	Adhesion subunit of a-agglutinin of a-cells, C-terminal sequence acts as a ligand for alpha-agglutinin (Sag1p) during agglutination, modified with O-linked oligomannosyl chains, linked to anchorage subunit Aga1p via two disulfide bonds
+YGR022C	YGR022C	YGR022C	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; overlaps almost completely with the verified ORF MTL1/YGR023W
+ASK10	YGR097W	ASK10	Component of RNA polymerase II holoenzyme, phosphorylated in response to oxidative stress; has a role in destruction of Ssn8p; proposed to function in activation of the glycerol channel Fps1p; paralogous to Rgc1p
+ECL1	YGR146C	ECL1	Protein of unknown function, affects chronological lifespan; induced by iron homeostasis transcription factor Aft2p; multicopy suppressor of temperature sensitive hsf1 mutant; induced by treatment with 8-methoxypsoralen and UVA irradiation
+ATF2	YGR177C	ATF2	Alcohol acetyltransferase, may play a role in steroid detoxification; forms volatile esters during fermentation, which is important for brewing and winemaking
+TOS2	YGR221C	TOS2	Protein involved in localization of Cdc24p to the site of bud growth; may act as a membrane anchor; localizes to the bud neck and bud tip; potentially phosphorylated by Cdc28p
+YGR226C	YGR226C	YGR226C	Dubious open reading frame, unlikely to encode a protein; not conserved in closely related Saccharomyces species; overlaps significantly with a verified ORF, AMA1/YGR225W
+MPC3	YGR243W	MPC3	Putative protein of unknown function; expression regulated by osmotic and alkaline stresses; the authentic, non-tagged protein is detected in highly purified mitochondria in high-throughput studies
+IMA1	YGR287C	IMA1	Major isomaltase (alpha-1,6-glucosidase) required for isomaltose utilization; has specificity for isomaltose, palatinose, and methyl-alpha-glucoside; member of the IMA isomaltase family
+MAL11	YGR289C	MAL11	Inducible high-affinity maltose transporter (alpha-glucoside transporter); encoded in the MAL1 complex locus; broad substrate specificity that includes maltotriose; required for isomaltose utilization
+YGR290W	YGR290W	YGR290W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; putative HLH protein; partially overlaps the verified ORF MAL11/YGR289C (a high-affinity maltose transporter)
+MAL12	YGR292W	MAL12	Maltase (alpha-D-glucosidase), inducible protein involved in maltose catabolism; encoded in the MAL1 complex locus; hydrolyzes the disaccharides maltose, turanose, maltotriose, and sucrose
+ARN2	YHL047C	ARN2	Transporter, member of the ARN family of transporters that specifically recognize siderophore-iron chelates; responsible for uptake of iron bound to the siderophore triacetylfusarinine C
+GUT1	YHL032C	GUT1	Glycerol kinase, converts glycerol to glycerol-3-phosphate; glucose repression of expression is mediated by Adr1p and Ino2p-Ino4p; derepression of expression on non-fermentable carbon sources is mediated by Opi1p and Rsf1p
+DOG2	YHR043C	DOG2	2-deoxyglucose-6-phosphate phosphatase, member of a family of low molecular weight phosphatases, similar to Dog1p, induced by oxidative and osmotic stress, confers 2-deoxyglucose resistance when overexpressed
+CPR2	YHR057C	CPR2	Peptidyl-prolyl cis-trans isomerase (cyclophilin), catalyzes the cis-trans isomerization of peptide bonds N-terminal to proline residues; has a potential role in the secretory pathway
+HXT4	YHR092C	HXT4	High-affinity glucose transporter of the major facilitator superfamily, expression is induced by low levels of glucose and repressed by high levels of glucose
+HXT1	YHR094C	HXT1	Low-affinity glucose transporter of the major facilitator superfamily, expression is induced by Hxk2p in the presence of glucose and repressed by Rgt1p when glucose is limiting
+HXT5	YHR096C	HXT5	Hexose transporter with moderate affinity for glucose, induced in the presence of non-fermentable carbon sources, induced by a decrease in growth rate, contains an extended N-terminal domain relative to other HXTs
+COX23	YHR116W	COX23	Mitochondrial intermembrane space protein that functions in mitochondrial copper homeostasis, essential for functional cytochrome oxidase expression; homologous to Cox17p; contains twin cysteine-x9-cysteine motifs
+SPL2	YHR136C	SPL2	Protein with similarity to cyclin-dependent kinase inhibitors; downregulates low-affinity phosphate transport during phosphate limitation; overproduction suppresses a plc1 null mutation; GFP-fusion protein localizes to the cytoplasm
+ARO9	YHR137W	ARO9	Aromatic aminotransferase II, catalyzes the first step of tryptophan, phenylalanine, and tyrosine catabolism
+PHO12	YHR215W	PHO12	One of three repressible acid phosphatases, a glycoprotein that is transported to the cell surface by the secretory pathway; nearly identical to Pho11p; upregulated by phosphate starvation
+IMA3	YIL172C	IMA3	Alpha-glucosidase with broad substrate specificity for alpha-1,4- and alpha-1,6-glucosides; member of IMA isomaltase family; not required for isomaltose utilization, but Ima3p overexpression allows the ima1 null mutant to grow on isomaltose
+SUC2	YIL162W	SUC2	Invertase, sucrose hydrolyzing enzyme; a secreted, glycosylated form is regulated by glucose repression, and an intracellular, nonglycosylated enzyme is produced constitutively
+COA1	YIL157C	COA1	Mitochondrial inner membrane protein required for assembly of the cytochrome c oxidase complex (complex IV); interacts with complex IV assembly factor Shy1p during the early stages of assembly
+SSL2	YIL143C	SSL2	Component of the holoenzyme form of RNA polymerase transcription factor TFIIH, has DNA-dependent ATPase/helicase activity and is required, with Rad3p, for unwinding promoter DNA; involved in DNA repair; homolog of human ERCC3
+PRK1	YIL095W	PRK1	Protein serine/threonine kinase; regulates the organization and function of the actin cytoskeleton and reduces endocytic ability of cell through the phosphorylation of the Pan1p-Sla1p-End3p protein complex
+YIL067C	YIL067C	YIL067C	Uncharacterized protein of unknown function
+RGI2	YIL057C	RGI2	Protein of unknown function involved in energy metabolism under respiratory conditions; expression induced under carbon limitation and repressed under high glucose
+YIL024C	YIL024C	YIL024C	Putative protein of unknown function; non-essential gene; expression directly regulated by the metabolic and meiotic transcriptional regulator Ume6p
+YJL218W	YJL218W	YJL218W	Putative protein of unknown function, similar to bacterial galactoside O-acetyltransferases; induced by oleate in an OAF1/PIP2-dependent manner; promoter contains an oleate response element consensus sequence; non-essential gene
+TPK1	YJL164C	TPK1	cAMP-dependent protein kinase catalytic subunit; promotes vegetative growth in response to nutrients via the Ras-cAMP signaling pathway; inhibited by regulatory subunit Bcy1p in the absence of cAMP; partially redundant with Tpk2p and Tpk3p
+INO1	YJL153C	INO1	Inositol-3-phosphate synthase, involved in synthesis of inositol phosphates and inositol-containing phospholipids; transcription is coregulated with other phospholipid biosynthetic genes by Ino2p and Ino4p, which bind the UASINO DNA element
+PHO86	YJL117W	PHO86	Endoplasmic reticulum (ER) resident protein required for ER exit of the high-affinity phosphate transporter Pho84p, specifically required for packaging of Pho84p into COPII vesicles
+VTC4	YJL012C	VTC4	Vacuolar membrane polyphosphate polymerase; subunit of the vacuolar transporter chaperone (VTC) complex involved in synthesis and transfer of polyP to the vacuole; regulates membrane trafficking; role in non-autophagic vacuolar fusion
+CBF1	YJR060W	CBF1	Dual function helix-loop-helix protein; binds the motif CACRTG present at several sites including MET gene promoters and centromere DNA element I (CDEI); affects nucleosome positioning at this motif; associates with other transcription factors such as Met4p and Isw1p to mediate transcriptional activation or repression; associates with kinetochore proteins and required for efficient chromosome segregation
+IBA57	YJR122W	IBA57	Mitochondrial matrix protein involved in the incorporation of iron-sulfur clusters into mitochondrial aconitase-type proteins; activates the radical-SAM family members Bio2p and Lip5p; interacts with Ccr4p in the two-hybrid system
+TIM8	YJR135W-A	TIM8	Mitochondrial intermembrane space protein, forms a complex with Tim13p that delivers a subset of hydrophobic proteins to the TIM22 complex for inner membrane insertion; homolog of human TIMM8A, implicated in Mohr-Tranebjaerg syndrome
+YJR146W	YJR146W	YJR146W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; partially overlaps the verified gene HMS2
+BAT2	YJR148W	BAT2	Cytosolic branched-chain amino acid (BCAA) aminotransferase, preferentially involved in BCAA catabolism; homolog of murine ECA39; highly expressed during stationary phase and repressed during logarithmic phase
+HXT16	YJR158W	HXT16	Protein of unknown function with similarity to hexose transporter family members, expression is repressed by high levels of glucose
+URA1	YKL216W	URA1	Dihydroorotate dehydrogenase, catalyzes the fourth enzymatic step in the de novo biosynthesis of pyrimidines, converting dihydroorotic acid into orotic acid
+MRPL31	YKL138C	MRPL31	Mitochondrial ribosomal protein of the large subunit
+MBR1	YKL093W	MBR1	Protein involved in mitochondrial functions and stress response; overexpression suppresses growth defects of hap2, hap3, and hap4 mutants
+DHR2	YKL078W	DHR2	Predominantly nucleolar DEAH-box ATP-dependent RNA helicase, required for 18S rRNA synthesis
+MDM35	YKL053C-A	MDM35	Mitochondrial intermembrane space protein; mutation affects mitochondrial distribution and morphology; contains twin cysteine-x9-cysteine motifs
+YKL031W	YKL031W	YKL031W	Dubious open reading frame, unlikely to encode a protein; not conserved in closely related Saccharomyces species
+YSR3	YKR053C	YSR3	Dihydrosphingosine 1-phosphate phosphatase, membrane protein involved in sphingolipid metabolism; has similarity to Lcb3p
+MRPL20	YKR085C	MRPL20	Mitochondrial ribosomal protein of the large subunit
+UBP11	YKR098C	UBP11	Ubiquitin-specific protease that cleaves ubiquitin from ubiquitinated proteins
+MMP1	YLL061W	MMP1	High-affinity S-methylmethionine permease, required for utilization of S-methylmethionine as a sulfur source; has similarity to S-adenosylmethionine permease Sam3p
+FPS1	YLL043W	FPS1	Plasma membrane channel, member of major intrinsic protein (MIP) family; involved in efflux of glycerol and in uptake of acetic acid and the trivalent metalloids arsenite and antimonite; phosphorylated by Hog1p MAPK under acetate stress
+RIX7	YLL034C	RIX7	Putative ATPase of the AAA family, required for export of pre-ribosomal large subunits from the nucleus; distributed between the nucleolus, nucleoplasm, and nuclear periphery depending on growth conditions
+COX17	YLL009C	COX17	Copper metallochaperone that transfers copper to Sco1p and Cox11p for eventual delivery to cytochrome c oxidase; contains twin cysteine-x9-cysteine motifs
+PAM18	YLR008C	PAM18	Constituent of the import motor (PAM complex) component of the Translocase of the Inner Mitochondrial membrane (TIM23 complex); essential J-protein cochaperone that stimulates Ssc1p ATPase activity to drive import; inhibited by Pam16p
+YLR042C	YLR042C	YLR042C	Protein of unknown function; localizes to the cytoplasm; YLL042C is not an essential gene
+GAL2	YLR081W	GAL2	Galactose permease, required for utilization of galactose; also able to transport glucose
+ALT1	YLR089C	ALT1	Alanine transaminase (glutamic pyruvic transaminase); involved in alanine biosynthetic and catabolic processes; the authentic, non-tagged protein is detected in highly purified mitochondria in high-throughput studies
+NYV1	YLR093C	NYV1	v-SNARE component of the vacuolar SNARE complex involved in vesicle fusion; inhibits ATP-dependent Ca(2+) transport activity of Pmc1p in the vacuolar membrane
+YLR162W	YLR162W	YLR162W	Putative protein of unknown function; overexpression confers resistance to the antimicrobial peptide MiAMP1 and causes growth arrest, apoptosis, and increased sensitivity to cobalt chloride
+UPS1	YLR193C	UPS1	Mitochondrial intermembrane space protein that regulates mitochondrial cardiolipin levels, null has defects in Mgm1p processing, integrity of mitochondrial inner membrane complexes, and mitochondrial morphology; ortholog of human PRELI
+TOP3	YLR234W	TOP3	DNA Topoisomerase III, conserved protein that functions in a complex with Sgs1p and Rmi1p to relax single-stranded negatively-supercoiled DNA preferentially, involved in telomere stability and regulation of mitotic recombination
+GSY2	YLR258W	GSY2	Glycogen synthase, similar to Gsy1p; expression induced by glucose limitation, nitrogen starvation, heat shock, and stationary phase; activity regulated by cAMP-dependent, Snf1p and Pho85p kinases as well as by the Gac1p-Glc7p phosphatase
+CTS1	YLR286C	CTS1	Endochitinase, required for cell separation after mitosis; transcriptional activation during the G1 phase of the cell cycle is mediated by transcription factor Ace2p
+YLR294C	YLR294C	YLR294C	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; partially overlaps the verified gene ATP14
+TMA10	YLR327C	TMA10	Protein of unknown function that associates with ribosomes; putative homolog of the F1F0-ATPase synthase regulator Stf2p
+JIP3	YLR331C	JIP3	Dubious open reading frame, unlikely to encode a protein; not conserved in closely related Saccharomyces species; 98% of ORF overlaps the verified gene MID2
+FBP1	YLR377C	FBP1	Fructose-1,6-bisphosphatase, key regulatory enzyme in the gluconeogenesis pathway, required for glucose metabolism; undergoes either proteasome-mediated or autophagy-mediated degradation depending on growth conditions; interacts with Vid30p
+SST2	YLR452C	SST2	GTPase-activating protein for Gpa1p, regulates desensitization to alpha factor pheromone; also required to prevent receptor-independent signaling of the mating pathway; member of the RGS (regulator of G-protein signaling) family
+YML131W	YML131W	YML131W	Putative protein of unknown function with similarity to medium chain dehydrogenase/reductases; expression induced by stresses including osmotic shock, DNA damaging agents, and other chemicals; GFP-fusion protein localizes to the cytoplasm
+COQ5	YML110C	COQ5	2-hexaprenyl-6-methoxy-1,4-benzoquinone methyltransferase, involved in ubiquinone (Coenzyme Q) biosynthesis; localizes to the matrix face of the mitochondrial inner membrane in a large complex with other ubiquinone biosynthetic enzymes
+RPM2	YML091C	RPM2	Protein subunit of mitochondrial RNase P, has roles in nuclear transcription, cytoplasmic and mitochondrial RNA processing, and mitochondrial translation; distributed to mitochondria, cytoplasmic processing bodies, and the nucleus
+YML090W	YML090W	YML090W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; partially overlaps the dubious ORF YML089C; exhibits growth defect on a non-fermentable (respiratory) carbon source
+GSF2	YML048W	GSF2	ER localized integral membrane protein that may promote secretion of certain hexose transporters, including Gal2p; involved in glucose-dependent repression
+PRP39	YML046W	PRP39	U1 snRNP protein involved in splicing, contains multiple tetriatricopeptide repeats
+MRPL39	YML009C	MRPL39	Mitochondrial ribosomal protein of the large subunit
+AIM34	YMR003W	AIM34	Protein of unknown function; GFP-fusion protein localizes to the mitochondria; null mutant is viable and displays reduced frequency of mitochondrial genome loss
+PLB2	YMR006C	PLB2	Phospholipase B (lysophospholipase) involved in phospholipid metabolism; displays transacylase activity in vitro; overproduction confers resistance to lysophosphatidylcholine
+HXT2	YMR011W	HXT2	High-affinity glucose transporter of the major facilitator superfamily, expression is induced by low levels of glucose and repressed by high levels of glucose
+RCH1	YMR034C	RCH1	Putative transporter, member of the SLC10 carrier family; identified in a transposon mutagenesis screen as a gene involved in azole resistance; YMR034C is not an essential gene
+ARG80	YMR042W	ARG80	Transcription factor involved in regulation of arginine-responsive genes; acts with Arg81p and Arg82p
+ISF1	YMR081C	ISF1	Serine-rich, hydrophilic protein with similarity to Mbr1p; overexpression suppresses growth defects of hap2, hap3, and hap4 mutants; expression is under glucose control; cotranscribed with NAM7 in a cyp1 mutant
+YMR085W	YMR085W	YMR085W	Putative protein of unknown function; YMR085W and adjacent ORF YMR084W are merged in related strains
+YMR103C	YMR103C	YMR103C	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data
+YPK2	YMR104C	YPK2	Protein kinase with similarity to serine/threonine protein kinase Ypk1p; functionally redundant with YPK1 at the genetic level; participates in a signaling pathway required for optimal cell wall integrity; homolog of mammalian kinase SGK
+NDE1	YMR145C	NDE1	Mitochondrial external NADH dehydrogenase, a type II NAD(P)H:quinone oxidoreductase that catalyzes the oxidation of cytosolic NADH; Nde1p and Nde2p provide cytosolic NADH to the mitochondrial respiratory chain
+ECM5	YMR176W	ECM5	Non-essential protein of unknown function, contains ATP/GTP-binding site motif A; null mutant exhibits cellular volume up to four times greater than wild-type, also large drooping buds with elongated necks
+RGM1	YMR182C	RGM1	Putative transcriptional repressor with proline-rich zinc fingers; overproduction impairs cell growth
+SPG5	YMR191W	SPG5	Protein required for survival at high temperature during stationary phase; not required for growth on nonfermentable carbon sources
+YMR206W	YMR206W	YMR206W	Putative protein of unknown function; YMR206W is not an essential gene
+CAT8	YMR280C	CAT8	Zinc cluster transcriptional activator necessary for derepression of a variety of genes under non-fermentative growth conditions, active after diauxic shift, binds carbon source responsive elements
+TDA1	YMR291W	TDA1	Putative kinase of unknown function; green fluorescent protein (GFP)-fusion protein localizes to the cytoplasm and nucleus; null mutant is sensitive to expression of the top1-T722A allele; not an essential gene
+ADE4	YMR300C	ADE4	Phosphoribosylpyrophosphate amidotransferase (PRPPAT; amidophosphoribosyltransferase), catalyzes first step of the 'de novo' purine nucleotide biosynthetic pathway
+ERG24	YNL280C	ERG24	C-14 sterol reductase, acts in ergosterol biosynthesis; mutants accumulate the abnormal sterol ignosterol (ergosta-8,14 dienol), and are viable under anaerobic growth conditions but inviable on rich medium under aerobic conditions
+MGS1	YNL218W	MGS1	Protein with DNA-dependent ATPase and ssDNA annealing activities involved in maintenance of genome; interacts functionally with DNA polymerase delta; homolog of human Werner helicase interacting protein (WHIP)
+IBD2	YNL164C	IBD2	Component of the BUB2-dependent spindle checkpoint pathway, interacts with Bfa1p and functions upstream of Bub2p and Bfa1p
+YNL144C	YNL144C	YNL144C	Putative protein of unknown function; non-tagged protein is detected in highly purified mitochondria in high-throughput studies; contains a PH domain and binds phosphatidylinositols and phosphatidylethanolamine in a large-scale study
+ESBP6	YNL125C	ESBP6	Protein with similarity to monocarboxylate permeases, appears not to be involved in transport of monocarboxylates such as lactate, pyruvate or acetate across the plasma membrane
+ATP23	YNR020C	ATP23	Putative metalloprotease of the mitochondrial inner membrane, required for processing of Atp6p; has an additional role in assembly of the F0 sector of the F1F0 ATP synthase complex
+MRPL50	YNR022C	MRPL50	Mitochondrial ribosomal protein of the large subunit, not essential for mitochondrial translation
+HXT17	YNR072W	HXT17	Hexose transporter, up-regulated in media containing raffinose and galactose at pH 7.7 versus pH 4.7, repressed by high levels of glucose
+RIB4	YOL143C	RIB4	Lumazine synthase (6,7-dimethyl-8-ribityllumazine synthase, also known as DMRL synthase); catalyzes synthesis of immediate precursor to riboflavin
+NDJ1	YOL104C	NDJ1	Meiosis-specific telomere protein, required for bouquet formation, effective homolog pairing, ordered cross-over distribution, sister chromatid cohesion at meiotic telomeres, chromosomal segregation and telomere-led rapid prophase movement
+IZH4	YOL101C	IZH4	Membrane protein involved in zinc ion homeostasis, member of the four-protein IZH family, expression induced by fatty acids and altered zinc levels; deletion reduces sensitivity to excess zinc; possible role in sterol metabolism
+PHM7	YOL084W	PHM7	Protein of unknown function, expression is regulated by phosphate levels; green fluorescent protein (GFP)-fusion protein localizes to the cell periphery and vacuole
+ARG1	YOL058W	ARG1	Arginosuccinate synthetase, catalyzes the formation of L-argininosuccinate from citrulline and L-aspartate in the arginine biosynthesis pathway; potential Cdc28p substrate
+IZH2	YOL002C	IZH2	Plasma membrane protein involved in zinc homeostasis and osmotin-induced apoptosis; transcription regulated by Zap1p, zinc and fatty acid levels; similar to mammalian adiponectins; deletion increases sensitivity to elevated zinc
+CYT1	YOR065W	CYT1	Cytochrome c1, component of the mitochondrial respiratory chain; expression is regulated by the heme-activated, glucose-repressed Hap2p/3p/4p/5p CCAAT-binding complex
+PTC5	YOR090C	PTC5	Mitochondrial type 2C protein phosphatase (PP2C) involved in regulation of pyruvate dehydrogenase activity by dephosphorylating the serine 133 of the Pda1p subunit; acts in concert with kinases Pkp1p and Pkp2p and phosphatase Ptc6p
+GPN2	YOR262W	GPN2	Protein of unknown function required for establishment of sister chromatid cohesion; contains an ATP/GTP binding site motif; similar to YLR243W and is highly conserved across species and homologous to human gene GPN2/ATPBD1B
+MCH5	YOR306C	MCH5	Plasma membrane riboflavin transporter; facilitates the uptake of vitamin B2; required for FAD-dependent processes; sequence similarity to mammalian monocarboxylate permeases, however mutants are not deficient in monocarboxylate transport
+AMF1	YOR378W	AMF1	Putative paralog of ATR1, but not required for boron tolerance; member of the DHA2 family of drug:H+ antiporters; YOR378W is not an essential gene
+FIT2	YOR382W	FIT2	Mannoprotein that is incorporated into the cell wall via a glycosylphosphatidylinositol (GPI) anchor, involved in the retention of siderophore-iron in the cell wall
+FIT3	YOR383C	FIT3	Mannoprotein that is incorporated into the cell wall via a glycosylphosphatidylinositol (GPI) anchor, involved in the retention of siderophore-iron in the cell wall
+GAL4	YPL248C	GAL4	DNA-binding transcription factor required for the activation of the GAL genes in response to galactose; repressed by Gal80p and activated by Gal3p
+THI6	YPL214C	THI6	Bifunctional enzyme with thiamine-phosphate pyrophosphorylase and 4-methyl-5-beta-hydroxyethylthiazole kinase activities, required for thiamine biosynthesis; GFP-fusion protein localizes to the cytoplasm in a punctate pattern
+MF(ALPHA)1	YPL187W	MF(ALPHA)1	Mating pheromone alpha-factor, made by alpha cells; interacts with mating type a cells to induce cell cycle arrest and other responses leading to mating; also encoded by MF(ALPHA)2, although MF(ALPHA)1 produces most alpha-factor
+RTC6	YPL183W-A	RTC6	Protein involved translation; mutants have defects in biogenesis of nuclear ribosomes; sequence similar to prokaryotic ribosomal protein L36, may be a mitochondrial ribosomal protein encoded in the nucleus
+MRPL40	YPL173W	MRPL40	Mitochondrial ribosomal protein of the large subunit
+OYE3	YPL171C	OYE3	Conserved NADPH oxidoreductase containing flavin mononucleotide (FMN), homologous to Oye2p with different ligand binding and catalytic properties; has potential roles in oxidative stress response and programmed cell death
+ODC1	YPL134C	ODC1	Mitochondrial inner membrane transporter, exports 2-oxoadipate and 2-oxoglutarate from the mitochondrial matrix to the cytosol for lysine and glutamate biosynthesis and lysine catabolism; suppresses, in multicopy, an fmc1 null mutation
+YPL113C	YPL113C	YPL113C	Glyoxylate reductase; acts on glyoxylate and hydroxypyruvate substrates; YPL113C is not an essential gene
+EEB1	YPL095C	EEB1	Acyl-coenzymeA:ethanol O-acyltransferase responsible for the major part of medium-chain fatty acid ethyl ester biosynthesis during fermentation; possesses short-chain esterase activity; may be involved in lipid metabolism and detoxification
+ATP4	YPL078C	ATP4	Subunit b of the stator stalk of mitochondrial F1F0 ATP synthase, which is a large, evolutionarily conserved enzyme complex required for ATP synthesis; contributes to the oligomerization of the complex; phosphorylated
+SUR1	YPL057C	SUR1	Probable catalytic subunit of a mannosylinositol phosphorylceramide (MIPC) synthase, forms a complex with probable regulatory subunit Csg2p; function in sphingolipid biosynthesis is overlapping with that of Csh1p
+ECM23	YPL021W	ECM23	Non-essential protein of unconfirmed function; affects pre-rRNA processing, may act as a negative regulator of the transcription of genes involved in pseudohyphal growth; homologous to Srd1p
+VTC3	YPL019C	VTC3	Subunit of the vacuolar transporter chaperone (VTC) complex involved in membrane trafficking, vacuolar polyphosphate accumulation, microautophagy and non-autophagic vacuolar fusion
+CTF19	YPL018W	CTF19	Outer kinetochore protein, required for accurate mitotic chromosome segregation; component of the kinetochore sub-complex COMA (Ctf19p, Okp1p, Mcm21p, Ame1p) that functions as a platform for kinetochore assembly
+IRC15	YPL017C	IRC15	Microtubule associated protein; regulates microtubule dynamics; required for accurate meiotic chromosome segregation; null mutant displays large budded cells due to delayed mitotic progression, increased levels of spontaneous Rad52 foci
+MRPS16	YPL013C	MRPS16	Mitochondrial ribosomal protein of the small subunit
+RRP12	YPL012W	RRP12	Protein required for export of the ribosomal subunits; associates with the RNA components of the pre-ribosomes; has a role in nuclear import in association with Pse1p; contains HEAT-repeats
+YPR027C	YPR027C	YPR027C	Putative protein of unknown function
+CSR2	YPR030W	CSR2	Nuclear protein proposed to regulate utilization of nonfermentable carbon sources and endocytosis of plasma membrane proteins; overproduction suppresses chs5 spa2 lethality at high temp; ubiquitinated by Rsp5p, deubiquitinated by Ubp2p
+KRE6	YPR159W	KRE6	Type II integral membrane protein required for beta-1,6 glucan biosynthesis; putative beta-glucan synthase; localizes to the ER, plasma membrane, sites of polarized growth and secretory vesicles; functionally redundant with Skn1p
+YPR196W	YPR196W	YPR196W	Putative maltose activator
+PHO11	YAR071W	PHO11	One of three repressible acid phosphatases, a glycoprotein that is transported to the cell surface by the secretory pathway; induced by phosphate starvation and coordinately regulated by PHO4 and PHO2
+MRP21	YBL090W	MRP21	Mitochondrial ribosomal protein of the small subunit; MRP21 exhibits genetic interactions with mutations in the COX2 and COX3 mRNA 5'-untranslated leader sequences
+IAI11	YBL059W	IAI11	Putative protein of unknown function; the authentic, non-tagged protein is detected in highly purified mitochondria in high-throughput studies
+GAL10	YBR019C	GAL10	UDP-glucose-4-epimerase, catalyzes the interconversion of UDP-galactose and UDP-D-glucose in galactose metabolism; also catalyzes the conversion of alpha-D-glucose or alpha-D-galactose to their beta-anomers
+GAL1	YBR020W	GAL1	Galactokinase, phosphorylates alpha-D-galactose to alpha-D-galactose-1-phosphate in the first step of galactose catabolism; expression regulated by Gal4p
+TCM62	YBR044C	TCM62	Protein involved in the assembly of the mitochondrial succinate dehydrogenase complex; putative chaperone
+REG2	YBR050C	REG2	Regulatory subunit of the Glc7p type-1 protein phosphatase; involved with Reg1p, Glc7p, and Snf1p in regulation of glucose-repressible genes, also involved in glucose-induced proteolysis of maltose permease
+YBR051W	YBR051W	YBR051W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; partiallly overlaps the REG2/YBR050C regulatory subunit of the Glc7p type-1 protein phosphatase
+TAT1	YBR069C	TAT1	Amino acid transport protein for valine, leucine, isoleucine, and tyrosine, low-affinity tryptophan and histidine transporter; overexpression confers FK506 and FTY720 resistance
+ARG3	YJL088W	ARG3	Ornithine carbamoyltransferase (carbamoylphosphate:L-ornithine carbamoyltransferase), catalyzes the sixth step in the biosynthesis of the arginine precursor ornithine
+ICS3	YJL077C	ICS3	Protein of unknown function; may play a role in vacuolar sorting, null mutants are hypersensitive to sortin2
+ZAP1	YJL056C	ZAP1	Zinc-regulated transcription factor; binds to zinc-responsive promoters to induce transcription of certain genes in presence of zinc, represses other genes in low zinc; regulates its own transcription; contains seven zinc-finger domains
+SDC25	YLL016W	SDC25	Non-essential Ras guanine nucleotide exchange factor (GEF) localized to the membrane; expressed in poor nutrients and on non-fermentable carbon sources; homologous to CDC25; contains a stop codon in S288C; full-length gene includes YLL017W
+YIL171W	YIL171W	YIL171W	Possible pseudogene in strain S288C; YIL171W and the adjacent ORF, YIL170W/HXT12, together encode a non-functional member of the hexose transporter family
+MAL61	MALT	MAL61	High-affinity maltose transporter
+MAL62	MALS	MAL62	Maltase (alpha-D-glucosidase)
+MEL1	MEL1	MEL1	Secreted alpha-galactosidase
+SUC4	SUC6	SUC4	Invertase
+MAL63	MALR	MAL63	MAL-activator protein

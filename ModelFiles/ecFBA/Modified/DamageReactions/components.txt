@@ -1,0 +1,42 @@
+# component names	gene name	systematic name
+O2 [mitochondria]		
+superoxide [mitochondria]		
+superoxide leakage minimum [mitochondria]		
+superoxide leakage maximum [mitochondria]		
+H2O2 [mitochondria]		
+pmet_superoxide [mitochondria]		
+prot_P00445	SOD1	YJR104C
+prot_P00447	SOD2	YHR008C
+hydroxyl radical [mitochondria]		
+glutathione [mitochondria]		
+glutathione disulfide [mitochondria]		
+thioredoxin [mitochondria]		
+thioredoxin disulfide [mitochondria]		
+prot_P40581	GPX3	YIR037W
+prot_P25372	TRX3	YCR083W
+prot_P41921	GLR1	YPL091W
+prot_P38816	TRR2	YHR106W
+prot_P15202	CTA1	YDR256C
+iron(2+) [mitochondria]		
+iron(3+) [mitochondria]		
+protein damage [mitochondria]		
+H2O2 [cytosol]		
+superoxide [cytosol]		
+H2O2 [cytosol]		
+hydroxyl radical [cytosol]		
+h+ [cytosol]		
+glutathione [cytosol]		
+glutathione disulfide [cytosol]		
+pmet_glutathione [cytosol]		
+thioredoxin [cytosol]		
+thioredoxin disulfide [cytosol]		
+pmet_thioredoxin [cytosol]		
+prot_P36014	GPX1	YKL026C
+prot_P38143	GPX2	YBR244W
+prot_P22217	TRX1	YLR043C
+prot_P22803	TRX2	YGR209C
+prot_P29509	TRR1	YDR353W
+prot_P06115	CTT1	YGR088W
+iron(2+) [cytosol]		
+iron(3+) [cytosol]		
+protein damage [cytosol]		

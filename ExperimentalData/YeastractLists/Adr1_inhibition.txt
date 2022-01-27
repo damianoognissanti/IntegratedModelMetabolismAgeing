@@ -1,0 +1,176 @@
+AGP2	YBR132C	AGP2	High affinity polyamine permease, preferentially uses spermidine over putrescine; expression is down-regulated by osmotic stress; plasma membrane carnitine transporter, also functions as a low-affinity amino acid permease
+CTP1	YBR291C	CTP1	Mitochondrial inner membrane citrate transporter, member of the mitochondrial carrier family
+KRR1	YCL059C	KRR1	Essential nucleolar protein required for the synthesis of 18S rRNA and for the assembly of 40S ribosomal subunit
+SPB1	YCL054W	SPB1	AdoMet-dependent methyltransferase involved in rRNA processing and 60S ribosomal subunit maturation; methylates G2922 in the tRNA docking site of the large subunit rRNA and in the absence of snR52, U2921; suppressor of PAB1 mutants
+AGP1	YCL025C	AGP1	Low-affinity amino acid permease with broad substrate range, involved in uptake of asparagine, glutamine, and other amino acids; expression is regulated by the SPS plasma membrane amino acid sensor system (Ssy1p-Ptr3p-Ssy5p)
+PWP2	YCR057C	PWP2	Conserved 90S pre-ribosomal component essential for proper endonucleolytic cleavage of the 35 S rRNA precursor at A0, A1, and A2 sites; contains eight WD-repeats; PWP2 deletion leads to defects in cell cycle and bud morphogenesis
+TIM22	YDL217C	TIM22	Essential core component of the mitochondrial TIM22 complex involved in insertion of polytopic proteins into the inner membrane; forms the channel through which proteins are imported
+CDC36	YDL165W	CDC36	Component of the CCR4-NOT complex, which has multiple roles in regulating mRNA levels including regulation of transcription and destabilizing mRNAs by deadenylation; basal transcription factor
+DAD1	YDR016C	DAD1	Essential subunit of the Dam1 complex (aka DASH complex), couples kinetochores to the force produced by MT depolymerization thereby aiding in chromosome segregation; is transferred to the kinetochore prior to mitosis
+RRP8	YDR083W	RRP8	Nucleolar protein involved in rRNA processing, pre-rRNA cleavage at site A2; also involved in telomere maintenance; mutation is synthetically lethal with a gar1 mutation
+ILT1	YDR090C	ILT1	Putative protein of unknown function
+ARX1	YDR101C	ARX1	Shuttling pre-60S factor; involved in the biogenesis of ribosomal large subunit biogenesis; interacts directly with Alb1; responsible for Tif6 recycling defects in absence of Rei1; associated with the ribosomal export complex
+SAC6	YDR129C	SAC6	Fimbrin, actin-bundling protein; cooperates with Scp1p (calponin/transgelin) in the organization and maintenance of the actin cytoskeleton
+MTQ2	YDR140W	MTQ2	S-adenosylmethionine-dependent methyltransferase of the seven beta-strand family; subunit of complex with Trm112p that methylates translation release factor Sup45p (eRF1) in the ternary complex eRF1-eRF3-GTP; similar to E.coli PrmC
+TRM82	YDR165W	TRM82	Subunit of a tRNA methyltransferase complex composed of Trm8p and Trm82p that catalyzes 7-methylguanosine modification of tRNA
+PEX5	YDR244W	PEX5	Peroxisomal membrane signal receptor for the C-terminal tripeptide signal sequence (PTS1) of peroxisomal matrix proteins, required for peroxisomal matrix protein import; also proposed to have PTS1-receptor independent functions
+YDR249C	YDR249C	YDR249C	Putative protein of unknown function
+MSW1	YDR268W	MSW1	Mitochondrial tryptophanyl-tRNA synthetase
+PHM6	YDR281C	PHM6	Protein of unknown function, expression is regulated by phosphate levels
+ATP5	YDR298C	ATP5	Subunit 5 of the stator stalk of mitochondrial F1F0 ATP synthase, which is an evolutionarily conserved enzyme complex required for ATP synthesis; homologous to bovine subunit OSCP (oligomycin sensitivity-conferring protein); phosphorylated
+GIC2	YDR309C	GIC2	Redundant rho-like GTPase Cdc42p effector; homolog of Gic1p; involved in initiation of budding and cellular polarization; interacts with Cdc42p via the Cdc42/Rac-interactive binding (CRIB) domain and with PI(4,5)P2 via a polybasic region
+BCP1	YDR361C	BCP1	Essential protein involved in nuclear export of Mss4p, which is a lipid kinase that generates phosphatidylinositol 4,5-biphosphate and plays a role in actin cytoskeleton organization and vesicular transport
+HPT1	YDR399W	HPT1	Dimeric hypoxanthine-guanine phosphoribosyltransferase, catalyzes the formation of both inosine monophosphate and guanosine monophosphate; mutations in the human homolog HPRT1 can cause Lesch-Nyhan syndrome and Kelley-Seegmiller syndrome
+DYN2	YDR424C	DYN2	Cytoplasmic light chain dynein, microtubule motor protein; proposed to be involved in the assembly of the nuclear pore complex
+APT2	YDR441C	APT2	Apparent pseudogene, not transcribed or translated under normal conditions; encodes a protein with similarity to adenine phosphoribosyltransferase, but artificially expressed protein exhibits no enzymatic activity
+UTP6	YDR449C	UTP6	Nucleolar protein, component of the small subunit (SSU) processome containing the U3 snoRNA that is involved in processing of pre-18S rRNA
+MFA1	YDR461W	MFA1	Mating pheromone a-factor, made by a cells; interacts with alpha cells to induce cell cycle arrest and other responses leading to mating; biogenesis involves C-terminal modification, N-terminal proteolysis, and export; also encoded by MFA2
+IZH1	YDR492W	IZH1	Membrane protein involved in zinc ion homeostasis, member of the four-protein IZH family; transcription is regulated directly by Zap1p, expression induced by zinc deficiency and fatty acids; deletion increases sensitivity to elevated zinc
+YEL073C	YEL073C	YEL073C	Putative protein of unknown function; located adjacent to ARS503 and the telomere on the left arm of chromosome V; regulated by inositol/choline
+URA3	YEL021W	URA3	Orotidine-5'-phosphate (OMP) decarboxylase, catalyzes the sixth enzymatic step in the de novo biosynthesis of pyrimidines, converting OMP into uridine monophosphate (UMP); converts 5-FOA into 5-fluorouracil, a toxic compound
+CHO1	YER026C	CHO1	Phosphatidylserine synthase, functions in phospholipid biosynthesis; catalyzes the reaction CDP-diaclyglycerol + L-serine = CMP + L-1-phosphatidylserine, transcriptionally repressed by myo-inositol and choline
+STE2	YFL026W	STE2	Receptor for alpha-factor pheromone; seven transmembrane-domain GPCR that interacts with both pheromone and a heterotrimeric G protein to initiate the signaling response that leads to mating between haploid a and alpha cells
+RAI1	YGL246C	RAI1	Nuclear protein with decapping endonuclease activity targeted toward mRNAs with unmethylated 7-methylguanosine cap structures; binds to and stabilizes the exoribonuclease Rat1p; required for pre-rRNA processing; homologous to human DOM3Z
+SAP4	YGL229C	SAP4	Protein required for function of the Sit4p protein phosphatase, member of a family of similar proteins that form complexes with Sit4p, including Sap155p, Sap185p, and Sap190p
+VRG4	YGL225W	VRG4	Golgi GDP-mannose transporter; regulates Golgi function and glycosylation in Golgi
+YGL188C	YGL188C	YGL188C	Dubious open reading frame unlikely to encode a functional protein, based on available experimental and comparative sequence data
+COX4	YGL187C	COX4	Subunit IV of cytochrome c oxidase, the terminal member of the mitochondrial inner membrane electron transport chain; precursor N-terminal 25 residues are cleaved during mitochondrial import; phosphorylated; spermidine enhances translation
+AGA2	YGL032C	AGA2	Adhesion subunit of a-agglutinin of a-cells, C-terminal sequence acts as a ligand for alpha-agglutinin (Sag1p) during agglutination, modified with O-linked oligomannosyl chains, linked to anchorage subunit Aga1p via two disulfide bonds
+YGR035C	YGR035C	YGR035C	Putative protein of unknown function, potential Cdc28p substrate; transcription is activated by paralogous transcription factors Yrm1p and Yrr1p along with genes involved in multidrug resistance
+YGR079W	YGR079W	YGR079W	Putative protein of unknown function; YGR079W is not an essential gene
+ASK10	YGR097W	ASK10	Component of RNA polymerase II holoenzyme, phosphorylated in response to oxidative stress; has a role in destruction of Ssn8p; proposed to function in activation of the glycerol channel Fps1p; paralogous to Rgc1p
+PPT1	YGR123C	PPT1	Protein serine/threonine phosphatase with similarity to human phosphatase PP5; present in both the nucleus and cytoplasm; expressed during logarithmic growth; computational analyses suggest roles in phosphate metabolism and rRNA processing
+ENP2	YGR145W	ENP2	Essential nucleolar protein, required for biogenesis of the small ribosomal subunit; contains WD repeats, interacts with Mpp10p and Bfr2p, and has homology to Spb1p
+QCR9	YGR183C	QCR9	Subunit 9 of the ubiquinol cytochrome-c reductase complex, which is a component of the mitochondrial inner membrane electron transport chain; required for electron transfer at the ubiquinol oxidase site of the complex
+PET54	YGR222W	PET54	Mitochondrial inner membrane protein; binds to the 5' UTR of the COX3 mRNA to activate its translation together with Pet122p and Pet494p; also binds to the COX1 Group I intron AI5 beta to facilitate exon ligation during splicing
+YGR226C	YGR226C	YGR226C	Dubious open reading frame, unlikely to encode a protein; not conserved in closely related Saccharomyces species; overlaps significantly with a verified ORF, AMA1/YGR225W
+SDA1	YGR245C	SDA1	Highly conserved nuclear protein required for actin cytoskeleton organization and passage through Start, plays a critical role in G1 events, binds Nap1p, also involved in 60S ribosome biogenesis
+YHL044W	YHL044W	YHL044W	Putative integral membrane protein, member of DUP240 gene family; green fluorescent protein (GFP)-fusion protein localizes to the plasma membrane in a punctate pattern
+MUP3	YHL036W	MUP3	Low affinity methionine permease, similar to Mup1p
+VMR1	YHL035C	VMR1	Vacuolar membrane protein involved in multiple drug resistance and metal sensitivity; ATP-binding cassette (ABC) family member involved in drug transport; potential Cdc28p substrate; induced under respiratory conditions
+SPO11	YHL022C	SPO11	Meiosis-specific protein that initiates meiotic recombination by catalyzing the formation of double-strand breaks in DNA via a transesterification reaction; required for homologous chromosome pairing and synaptonemal complex formation
+QCR10	YHR001W-A	QCR10	Subunit of the ubiqunol-cytochrome c oxidoreductase complex which includes Cobp, Rip1p, Cyt1p, Cor1p, Qcr2p, Qcr6p, Qcr7p, Qcr8p, Qcr9p, and Qcr10p and comprises part of the mitochondrial respiratory chain
+TIM10	YHR005C-A	TIM10	Essential protein of the mitochondrial intermembrane space, forms a complex with Tim9p (TIM10 complex) that delivers hydrophobic proteins to the TIM22 complex for insertion into the inner membrane
+FSH1	YHR049W	FSH1	Putative serine hydrolase that localizes to both the nucleus and cytoplasm; sequence is similar to S. cerevisiae Fsh2p and Fsh3p and the human candidate tumor suppressor OVCA2
+CIC1	YHR052W	CIC1	Essential protein that interacts with proteasome components and has a potential role in proteasome substrate specificity; also copurifies with 66S pre-ribosomal particles
+SSF1	YHR066W	SSF1	Constituent of 66S pre-ribosomal particles, required for ribosomal large subunit maturation; functionally redundant with Ssf2p; member of the Brix family
+PCL5	YHR071W	PCL5	Cyclin, interacts with and phosphorylated by Pho85p cyclin-dependent kinase (Cdk), induced by Gcn4p at level of transcription, specifically required for Gcn4p degradation, may be sensor of cellular protein biosynthetic capacity
+NOP10	YHR072W-A	NOP10	Constituent of small nucleolar ribonucleoprotein particles containing H/ACA-type snoRNAs, which are required for pseudouridylation and processing of pre-18S rRNA
+SPL2	YHR136C	SPL2	Protein with similarity to cyclin-dependent kinase inhibitors; downregulates low-affinity phosphate transport during phosphate limitation; overproduction suppresses a plc1 null mutation; GFP-fusion protein localizes to the cytoplasm
+ARO9	YHR137W	ARO9	Aromatic aminotransferase II, catalyzes the first step of tryptophan, phenylalanine, and tyrosine catabolism
+RPL42B	YHR141C	RPL42B	Protein component of the large (60S) ribosomal subunit, identical to Rpl42Ap and has similarity to rat L44; required for propagation of the killer toxin-encoding M1 double-stranded RNA satellite of the L-A double-stranded RNA virus
+NMD3	YHR170W	NMD3	Protein involved in nuclear export of the large ribosomal subunit; acts as a Crm1p-dependent adapter protein for export of nascent ribosomal subunits through the nuclear pore complex
+IMD2	YHR216W	IMD2	Inosine monophosphate dehydrogenase, catalyzes the rate-limiting step in GTP biosynthesis, expression is induced by mycophenolic acid resulting in resistance to the drug, expression is repressed by nutrient limitatio
+SUC2	YIL162W	SUC2	Invertase, sucrose hydrolyzing enzyme; a secreted, glycosylated form is regulated by glucose repression, and an intracellular, nonglycosylated enzyme is produced constitutively
+COX5B	YIL111W	COX5B	Subunit Vb of cytochrome c oxidase, which is the terminal member of the mitochondrial inner membrane electron transport chain; predominantly expressed during anaerobic growth while its isoform Va (Cox5Ap) is expressed during aerobic growth
+FMC1	YIL098C	FMC1	Mitochondrial matrix protein, required for assembly or stability at high temperature of the F1 sector of mitochondrial F1F0 ATP synthase; null mutant temperature sensitive growth on glycerol is suppressed by multicopy expression of Odc1p
+ARC15	YIL062C	ARC15	Subunit of the ARP2/3 complex, which is required for the motility and integrity of cortical actin patches; has mRNA binding activity
+TIR3	YIL011W	TIR3	Cell wall mannoprotein of the Srp1p/Tip1p family of serine-alanine-rich proteins; expressed under anaerobic conditions and required for anaerobic growth
+EST3	YIL009C-A	EST3	Component of the telomerase holoenzyme, involved in telomere replication
+DCG1	YIR030C	DCG1	Protein of unknown function, expression is sensitive to nitrogen catabolite repression and regulated by Dal80p; contains transmembrane domain
+YJL206C	YJL206C	YJL206C	Putative protein of unknown function; similar to transcriptional regulators from the Zn[2]-Cys[6] binuclear cluster protein family; mRNA is weakly cell cycle regulated, peaking in S phase; induced rapidly upon MMS treatment
+RPL39	YJL189W	RPL39	Protein component of the large (60S) ribosomal subunit, has similarity to rat L39 ribosomal protein; required for ribosome biogenesis; loss of both Rpl31p and Rpl39p confers lethality; also exhibits genetic interactions with SIS1 and PAB1
+ASG7	YJL170C	ASG7	Protein that regulates signaling from a G protein beta subunit Ste4p and its relocalization within the cell; specific to a-cells and induced by alpha-factor
+PET191	YJR034W	PET191	Protein required for assembly of cytochrome c oxidase; exists as an oligomer that is integral to the mitochondrial inner membrane and faces the intermembrane space; contains a twin Cx9C motif
+CYC1	YJR048W	CYC1	Cytochrome c, isoform 1; electron carrier of the mitochondrial intermembrane space that transfers electrons from ubiquinone-cytochrome c oxidoreductase to cytochrome c oxidase during cellular respiration
+STE18	YJR086W	STE18	G protein gamma subunit, forms a dimer with Ste4p to activate the mating signaling pathway, forms a heterotrimer with Gpa1p and Ste4p to dampen signaling; C-terminus is palmitoylated and farnesylated, which are required for normal signaling
+RPL43B	YJR094W-A	RPL43B	Protein component of the large (60S) ribosomal subunit, identical to Rpl43Ap and has similarity to rat L37a ribosomal protein
+RSM26	YJR101W	RSM26	Mitochondrial ribosomal protein of the small subunit
+PGU1	YJR153W	PGU1	Endo-polygalacturonase, pectolytic enzyme that hydrolyzes the alpha-1,4-glycosidic bonds in the rhamnogalacturonan chains in pectins
+COS5	YJR161C	COS5	Protein of unknown function, member the DUP380 subfamily of conserved, often subtelomerically-encoded proteins
+URA1	YKL216W	URA1	Dihydroorotate dehydrogenase, catalyzes the fourth enzymatic step in the de novo biosynthesis of pyrimidines, converting dihydroorotic acid into orotic acid
+YKL177W	YKL177W	YKL177W	Dubious open reading frame unlikely to encode a protein, based on available experimental and comparative sequence data; partially overlaps the verified gene STE3
+SDH1	YKL148C	SDH1	Flavoprotein subunit of succinate dehydrogenase (Sdh1p, Sdh2p, Sdh3p, Sdh4p), which couples the oxidation of succinate to the transfer of electrons to ubiquinone as part of the TCA cycle and the mitochondrial respiratory chain
+MRPL31	YKL138C	MRPL31	Mitochondrial ribosomal protein of the large subunit
+HOT13	YKL084W	HOT13	Zinc-binding mitochondrial intermembrane space (IMS) protein involved in a disulfide relay system for IMS import of cysteine-containing proteins; binds Mia40p and stimulates its Erv1p-dependent oxidation, probably by sequestering zinc
+MDM35	YKL053C-A	MDM35	Mitochondrial intermembrane space protein; mutation affects mitochondrial distribution and morphology; contains twin cysteine-x9-cysteine motifs
+MMO1	YKL044W	MMO1	Dubious open reading frame unlikely to encode a functional protein, based on available experimental and comparative sequence data
+DBP7	YKR024C	DBP7	Putative ATP-dependent RNA helicase of the DEAD-box family involved in ribosomal biogenesis; essential for growth under anaerobic conditions
+SOF1	YLL011W	SOF1	Essential protein required for biogenesis of 40S (small) ribosomal subunit; has similarity to the beta subunit of trimeric G-proteins and the splicing factor Prp4p
+COX17	YLL009C	COX17	Copper metallochaperone that transfers copper to Sco1p and Cox11p for eventual delivery to cytochrome c oxidase; contains twin cysteine-x9-cysteine motifs
+PAM18	YLR008C	PAM18	Constituent of the import motor (PAM complex) component of the Translocase of the Inner Mitochondrial membrane (TIM23 complex); essential J-protein cochaperone that stimulates Ssc1p ATPase activity to drive import; inhibited by Pam16p
+RLP24	YLR009W	RLP24	Essential protein with similarity to Rpl24Ap and Rpl24Bp, associated with pre-60S ribosomal subunits and required for ribosomal large subunit biogenesis
+TEN1	YLR010C	TEN1	Protein that regulates telomeric length; protects telomeric ends in a complex with Cdc13p and Stn1p
+ASP3-3	YLR158C	ASP3-3	Cell-wall L-asparaginase II involved in asparagine catabolism; expression induced during nitrogen starvation; ORF contains a short non-coding RNA that enhances expression of full-length gene; reference strain S288C has four copies of ASP3
+RPS31	YLR167W	RPS31	Fusion protein that is cleaved to yield a ribosomal protein of the small (40S) subunit and ubiquitin; ubiquitin may facilitate assembly of the ribosomal protein into ribosomes; interacts genetically with translation factor eIF2B
+UTP13	YLR222C	UTP13	Nucleolar protein, component of the small subunit (SSU) processome containing the U3 snoRNA that is involved in processing of pre-18S rRNA
+YEF3	YLR249W	YEF3	Gamma subunit of translational elongation factor eEF1B, stimulates the binding of aminoacyl-tRNA (AA-tRNA) to ribosomes by releasing eEF1A (Tef1p/Tef2p) from the ribosomal complex; contains two ABC cassettes; binds and hydrolyzes ATP
+YLR252W	YLR252W	YLR252W	Dubious open reading frame unlikely to encode a protein, based on experimental and comparative sequence data; partially overlaps the verified gene SYM1, a mitochondrial protein involved in ethanol metabolism
+PDR8	YLR266C	PDR8	Transcription factor; targets include ATP-binding cassette (ABC) transporters, major facilitator superfamily transporters, and other genes involved in the pleiotropic drug resistance (PDR) phenomenon
+RPS30A	YLR287C-A	RPS30A	Protein component of the small (40S) ribosomal subunit; nearly identical to Rps30Bp and has similarity to rat S30 ribosomal protein
+EST2	YLR318W	EST2	Reverse transcriptase subunit of the telomerase holoenzyme, essential for telomerase core catalytic activity, involved in other aspects of telomerase assembly and function; mutations in human homolog are associated with aplastic anemia
+CIS1	YLR346C	CIS1	Putative protein of unknown function found in mitochondria; expression is regulated by transcription factors involved in pleiotropic drug resistance, Pdr1p and Yrr1p; YLR346C is not an essential gene
+COX8	YLR395C	COX8	Subunit VIII of cytochrome c oxidase, which is the terminal member of the mitochondrial inner membrane electron transport chain
+IMD3	YLR432W	IMD3	Inosine monophosphate dehydrogenase, catalyzes the first step of GMP biosynthesis, member of a four-gene family in S. cerevisiae, constitutively expressed
+SML1	YML058W	SML1	Ribonucleotide reductase inhibitor involved in regulating dNTP production; regulated by Mec1p and Rad53p during DNA damage and S phase
+IMD4	YML056C	IMD4	Inosine monophosphate dehydrogenase, catalyzes the first step of GMP biosynthesis, member of a four-gene family in S. cerevisiae, constitutively expressed
+PRP39	YML046W	PRP39	U1 snRNP protein involved in splicing, contains multiple tetriatricopeptide repeats
+YET2	YMR040W	YET2	Protein of unknown function that may interact with ribosomes, based on co-purification experiments; homolog of human BAP31 protein
+YKU80	YMR106C	YKU80	Subunit of the telomeric Ku complex (Yku70p-Yku80p), involved in telomere length maintenance, structure and telomere position effect; relocates to sites of double-strand cleavage to promote nonhomologous end joining during DSB repair
+PAH1	YMR165C	PAH1	Mg<sup>2+</sup>-dependent phosphatidate (PA) phosphatase, catalyzes the dephosphorylation of PA to yield diacylglycerol and P<sub>i</sub>, responsible for de novo lipid synthesis; homologous to mammalian lipin 1
+ICY1	YMR195W	ICY1	Protein of unknown function, required for viability in rich media of cells lacking mitochondrial DNA; mutants have an invasive growth defect with elongated morphology; induced by amino acid starvation
+CUS1	YMR240C	CUS1	Protein required for assembly of U2 snRNP into the spliceosome, forms a complex with Hsh49p and Hsh155p
+COX7	YMR256C	COX7	Subunit VII of cytochrome c oxidase, which is the terminal member of the mitochondrial inner membrane electron transport chain
+RSN1	YMR266W	RSN1	Membrane protein of unknown function; overexpression suppresses NaCl sensitivity of sro7 mutant cells by restoring sodium pump (Ena1p) localization to the plasma membrane
+ATP11	YNL315C	ATP11	Molecular chaperone, required for the assembly of alpha and beta subunits into the F1 sector of mitochondrial F1F0 ATP synthase
+ATX1	YNL259C	ATX1	Cytosolic copper metallochaperone that transports copper to the secretory vesicle copper transporter Ccc2p for eventual insertion into Fet3p, which is a multicopper oxidase required for high-affinity iron uptake
+MRPL17	YNL252C	MRPL17	Mitochondrial ribosomal protein of the large subunit
+SSU72	YNL222W	SSU72	Transcription/RNA-processing factor that associates with TFIIB and cleavage/polyadenylation factor Pta1p; exhibits phosphatase activity on serine-5 of the RNA polymerase II C-terminal domain; affects start site selection in vivo
+MGS1	YNL218W	MGS1	Protein with DNA-dependent ATPase and ssDNA annealing activities involved in maintenance of genome; interacts functionally with DNA polymerase delta; homolog of human Werner helicase interacting protein (WHIP)
+IPI3	YNL182C	IPI3	Essential component of the Rix1 complex (Rix1p, Ipi1p, Ipi3p) that is required for processing of ITS2 sequences from 35S pre-rRNA; highly conserved and contains WD40 motifs; Rix1 complex associates with Mdn1p in pre-60S ribosomal particles
+IBD2	YNL164C	IBD2	Component of the BUB2-dependent spindle checkpoint pathway, interacts with Bfa1p and functions upstream of Bub2p and Bfa1p
+YCK2	YNL154C	YCK2	Palmitoylated plasma membrane-bound casein kinase I isoform; shares redundant functions with Yck1p in morphogenesis, proper septin assembly, endocytic trafficking; provides an essential function overlapping with that of Yck1p
+MFA2	YNL145W	MFA2	Mating pheromone a-factor, made by a cells; interacts with alpha cells to induce cell cycle arrest and other responses leading to mating; biogenesis involves C-terminal modification, N-terminal proteolysis, and export; also encoded by MFA1
+AAH1	YNL141W	AAH1	Adenine deaminase (adenine aminohydrolase), converts adenine to hypoxanthine; involved in purine salvage; transcriptionally regulated by nutrient levels and growth phase; Aah1p degraded upon entry into quiescence via SCF and the proteasome
+NAF1	YNL124W	NAF1	RNA-binding protein required for the assembly of box H/ACA snoRNPs and thus for pre-rRNA processing, forms a complex with Shq1p and interacts with H/ACA snoRNP components Nhp2p and Cbf5p; similar to Gar1p
+MLS1	YNL117W	MLS1	Malate synthase, enzyme of the glyoxylate cycle, involved in utilization of non-fermentable carbon sources; expression is subject to carbon catabolite repression; localizes in peroxisomes during growth in oleic acid medium
+DBP2	YNL112W	DBP2	Essential ATP-dependent RNA helicase of the DEAD-box protein family, involved in nonsense-mediated mRNA decay and rRNA processing
+GCD10	YNL062C	GCD10	Subunit of tRNA (1-methyladenosine) methyltransferase with Gcd14p, required for the modification of the adenine at position 58 in tRNAs, especially tRNAi-Met; first identified as a negative regulator of GCN4 expression
+TRM112	YNR046W	TRM112	Subunit of tRNA methyltransferase (MTase) complexes in combination with Trm9p and Trm11p; subunit of complex with Mtq2p that methylates Sup45p (eRF1) in the ternary complex eRF1-eRF3-GTP; deletion confers resistance to zymocin
+YNR066C	YNR066C	YNR066C	Putative membrane-localized protein of unknown function
+PFK27	YOL136C	PFK27	6-phosphofructo-2-kinase, catalyzes synthesis of fructose-2,6-bisphosphate; inhibited by phosphoenolpyruvate and sn-glycerol 3-phosphate, expression induced by glucose and sucrose, transcriptional regulation involves protein kinase A
+MDH2	YOL126C	MDH2	Cytoplasmic malate dehydrogenase, one of three isozymes that catalyze interconversion of malate and oxaloacetate; involved in the glyoxylate cycle and gluconeogenesis during growth on two-carbon compounds; interacts with Pck1p and Fbp1
+TRM11	YOL124C	TRM11	Catalytic subunit of an adoMet-dependent tRNA methyltransferase complex (Trm11p-Trm112p), required for the methylation of the guanosine nucleotide at position 10 (m2G10) in tRNAs; contains a THUMP domain and a methyltransferase domain
+YOL107W	YOL107W	YOL107W	Putative protein of unknown function; green fluorescent protein (GFP)-fusion protein localizes to the cytoplasm and colocalizes in a punctate pattern with the early golgi/COPI vesicles; YOL107W is not an essential protein
+IZH4	YOL101C	IZH4	Membrane protein involved in zinc ion homeostasis, member of the four-protein IZH family, expression induced by fatty acids and altered zinc levels; deletion reduces sensitivity to excess zinc; possible role in sterol metabolism
+ATP19	YOL077W-A	ATP19	Subunit k of the mitochondrial F1F0 ATP synthase, which is a large enzyme complex required for ATP synthesis; associated only with the dimeric form of ATP synthase
+ARG1	YOL058W	ARG1	Arginosuccinate synthetase, catalyzes the formation of L-argininosuccinate from citrulline and L-aspartate in the arginine biosynthesis pathway; potential Cdc28p substrate
+YOL019W	YOL019W	YOL019W	Protein of unknown function; green fluorescent protein (GFP)-fusion protein localizes to the cell periphery and vacuole
+YOL014W	YOL014W	YOL014W	Putative protein of unknown function
+IZH2	YOL002C	IZH2	Plasma membrane protein involved in zinc homeostasis and osmotin-induced apoptosis; transcription regulated by Zap1p, zinc and fatty acid levels; similar to mammalian adiponectins; deletion increases sensitivity to elevated zinc
+HMS1	YOR032C	HMS1	Basic helix-loop-helix (bHLH) protein with similarity to myc-family transcription factors; overexpression confers hyperfilamentous growth and suppresses the pseudohyphal filamentation defect of a diploid mep1 mep2 homozygous null mutant
+TOM6	YOR045W	TOM6	Component of the TOM (translocase of outer membrane) complex responsible for recognition and initial import steps for all mitochondrially directed proteins; promotes assembly and stability of the TOM complex
+PTC5	YOR090C	PTC5	Mitochondrial type 2C protein phosphatase (PP2C) involved in regulation of pyruvate dehydrogenase activity by dephosphorylating the serine 133 of the Pda1p subunit; acts in concert with kinases Pkp1p and Pkp2p and phosphatase Ptc6p
+LEU9	YOR108W	LEU9	Alpha-isopropylmalate synthase II (2-isopropylmalate synthase), catalyzes the first step in the leucine biosynthesis pathway; the minor isozyme, responsible for the residual alpha-IPMS activity detected in a leu4 null mutant
+GAC1	YOR178C	GAC1	Regulatory subunit for Glc7p type-1 protein phosphatase (PP1), tethers Glc7p to Gsy2p glycogen synthase, binds Hsf1p heat shock transcription factor, required for induction of some HSF-regulated genes under heat shock
+SER1	YOR184W	SER1	3-phosphoserine aminotransferase, catalyzes the formation of phosphoserine from 3-phosphohydroxypyruvate, required for serine and glycine biosynthesis; regulated by the general control of amino acid biosynthesis mediated by Gcn4p
+DGA1	YOR245C	DGA1	Diacylglycerol acyltransferase, catalyzes the terminal step of triacylglycerol (TAG) formation, acylates diacylglycerol using acyl-CoA as an acyl donor, localized to lipid particles
+CDC31	YOR257W	CDC31	Calcium-binding component of the spindle pole body (SPB) half-bridge, required for SPB duplication in mitosis and meiosis II; homolog of mammalian centrin; binds multiubiquitinated proteins and is involved in proteasomal protein degradation
+YOR268C	YOR268C	YOR268C	Putative protein of unknown function; sporulation is abnormal in homozygous diploid; YOR268C is not an essential gene
+SFG1	YOR315W	SFG1	Nuclear protein, putative transcription factor required for growth of superficial pseudohyphae (which do not invade the agar substrate) but not for invasive pseudohyphal growth; may act together with Phd1p; potential Cdc28p substrate
+RPA43	YOR340C	RPA43	RNA polymerase I subunit A43
+EEB1	YPL095C	EEB1	Acyl-coenzymeA:ethanol O-acyltransferase responsible for the major part of medium-chain fatty acid ethyl ester biosynthesis during fermentation; possesses short-chain esterase activity; may be involved in lipid metabolism and detoxification
+ALD6	YPL061W	ALD6	Cytosolic aldehyde dehydrogenase, activated by Mg2+ and utilizes NADP+ as the preferred coenzyme; required for conversion of acetaldehyde to acetate; constitutively expressed; locates to the mitochondrial outer surface upon oxidative stress
+NOP4	YPL043W	NOP4	Nucleolar protein, essential for processing and maturation of 27S pre-rRNA and large ribosomal subunit biogenesis; constituent of 66S pre-ribosomal particles; contains four RNA recognition motifs (RRMs)
+RPA135	YPR010C	RPA135	RNA polymerase I second largest subunit A135
+MSF1	YPR047W	MSF1	Mitochondrial phenylalanyl-tRNA synthetase, active as a monomer, unlike the cytoplasmic subunit which is active as a dimer complexed to a beta subunit dimer; similar to the alpha subunit of E. coli phenylalanyl-tRNA synthetase
+TOM5	YPR133W-A	TOM5	Component of the TOM (translocase of outer membrane) complex responsible for recognition and initial import of all mitochondrially directed proteins; involved in transfer of precursors from the Tom70p and Tom20p receptors to the Tom40p pore
+ECM1	YAL059W	ECM1	Pre-ribosomal factor involved in 60S ribosomal protein subunit export; associates with the pre-60S particle; shuttles between the nucleus and cytoplasm
+GCV3	YAL044C	GCV3	H subunit of the mitochondrial glycine decarboxylase complex, required for the catabolism of glycine to 5,10-methylene-THF; also required for all protein lipoylation; expression is regulated by levels of 5,10-methylene-THF
+CLN3	YAL040C	CLN3	G1 cyclin involved in cell cycle progression; activates Cdc28p kinase to promote the G1 to S phase transition; plays a role in regulating transcription of the other G1 cyclins, CLN1 and CLN2; regulated by phosphorylation and proteolysis
+CCR4	YAL021C	CCR4	Component of the CCR4-NOT transcriptional complex, which is involved in regulation of gene expression; component of the major cytoplasmic deadenylase, which is involved in mRNA poly(A) tail shortening
+MDM10	YAL010C	MDM10	Subunit of both the ERMES complex that links the ER to mitochondria, and of the mitochondrial sorting and assembly machinery (SAM complex) that functions in import and assembly of outer membrane beta-barrel proteins
+NUP60	YAR002W	NUP60	Subunit of the nuclear pore complex (NPC), functions to anchor Nup2p to the NPC in a process controlled by the nucleoplasmic concentration of Gsp1p-GTP; involved in nuclear export and cytoplasmic localization of specific mRNAs such as ASH1
+YAR075W	YAR075W	YAR075W	Non-functional protein with homology IMP dehydrogenase; YAR073W/IMD1 and YAR075W comprise a continuous reading frame in some strains of S. cerevisiae.
+PRS4	YBL068W	PRS4	5-phospho-ribosyl-1(alpha)-pyrophosphate synthetase, synthesizes PRPP, which is required for nucleotide, histidine, and tryptophan biosynthesis; one of five related enzymes, which are active as heteromultimeric complexes
+TOD6	YBL054W	TOD6	PAC motif binding protein involved in rRNA and ribosome biogenesis; subunit of the RPD3L histone deacetylase complex; Myb-like HTH transcription factor, similar to Dot6p; hypophosphorylated by rapamycin treatment in a Sch9p-dependent manne
+ERD2	YBL040C	ERD2	HDEL receptor, an integral membrane protein that binds to the HDEL motif in proteins destined for retention in the endoplasmic reticulum; has a role in maintenance of normal levels of ER-resident proteins
+YBL029W	YBL029W	YBL029W	Non-essential protein of unknown function
+ACH1	YBL015W	ACH1	Protein with CoA transferase activity, particularly for CoASH transfer from succinyl-CoA to acetate; has minor acetyl-CoA-hydrolase activity; phosphorylated; required for acetate utilization and for diploid pseudohyphal growth
+GPI18	YBR004C	GPI18	Functional ortholog of human PIG-V, which is a mannosyltransferase that transfers the second mannose in glycosylphosphatidylinositol biosynthesis; the authentic, non-tagged protein was localized to mitochondria
+RCR1	YBR005W	RCR1	Protein of the ER membrane involved in cell wall chitin deposition; may function in the endosomal-vacuolar trafficking pathway, helping determine whether plasma membrane proteins are degraded or routed to the plasma membrane
+FUR4	YBR021W	FUR4	Uracil permease, localized to the plasma membrane; expression is tightly regulated by uracil levels and environmental cues
+ARG3	YJL088W	ARG3	Ornithine carbamoyltransferase (carbamoylphosphate:L-ornithine carbamoyltransferase), catalyzes the sixth step in the biosynthesis of the arginine precursor ornithine
+NET1	YJL076W	NET1	Core subunit of the RENT complex, which is a complex involved in nucleolar silencing and telophase exit; stimulates transcription by RNA polymerase I and regulates nucleolar structure
+YJL043W	YJL043W	YJL043W	Putative protein of unknown function; YJL043W is a non-essential gene
+IRC18	YJL037W	IRC18	Putative protein of unknown function; expression induced in respiratory-deficient cells and in carbon-limited chemostat cultures; similar to adjacent ORF, YJL038C; null mutant displays increased levels of spontaneous Rad52p foci

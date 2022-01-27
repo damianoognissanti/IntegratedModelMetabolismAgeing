@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="DAccumulationModel" timeUnits="second" extentUnits="gram">
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_hour">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="gram_dryweight">
+        <listOfUnits>
+          <unit kind="gram" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="fraction">
+        <listOfUnits>
+          <unit kind="dimensionless" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="cytosol" spatialDimensions="3" size="1" units="dimensionless" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="mass" compartment="cytosol" initialAmount="2.6e-11" substanceUnits="gram_dryweight" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="intactProt" compartment="cytosol" initialAmount="0.46" substanceUnits="fraction" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="damagedProt" compartment="cytosol" initialAmount="0" substanceUnits="fraction" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="g" value="0.4" units="per_hour" constant="true"/>
+      <parameter id="f" value="0.01" units="per_hour" constant="true"/>
+      <parameter id="r" value="0.01" units="per_hour" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="growth" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="mass" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> g </ci>
+              <ci> mass </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="D_prod_and_repair" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="intactProt" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="damagedProt" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <apply>
+                <times/>
+                <ci> f </ci>
+                <ci> intactProt </ci>
+              </apply>
+              <apply>
+                <times/>
+                <ci> r </ci>
+                <ci> damagedProt </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

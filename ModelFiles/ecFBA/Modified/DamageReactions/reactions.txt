@@ -1,0 +1,54 @@
+# reaction names	lower bound	upper bound
+oxygen transport 	0	1000
+oxygen transport (reversible)	0	1000
+superoxide production (mitochondria)	0	1000
+pseudo superoxide leakage minimum	0	1000
+pseudo superoxide leakage maximum	0	1000
+superoxide oxidoreductase (arm, mitochondria)	0	1000
+superoxide oxidoreductase (SOD1, mitochondria)	0	1000
+draw_prot_P00445	0	1000
+superoxide oxidoreductase (SOD2, mitochondria)	0	1000
+draw_prot_P00447	0	1000
+hydroxyl production via peroxynitrite (mitochondria)	0	1000
+glutathione peroxidase (GPX3, mitochondria)	0	1000
+glutathione reductase (GLR1, mitochondria)	0	1000
+thioredoxin peroxidase (TRX3, mitochondria)	0	1000
+thioredoxin reductase (TRR2, mitochondria)	0	1000
+draw_prot_P40581	0	1000
+draw_prot_P41921	0	1000
+draw_prot_P25372	0	1000
+draw_prot_P38816	0	1000
+hydrogen peroxide catalase (CTA1, mitochondria)	0	1000
+draw_prot_P15202	0	1000
+Fenton (mitochondria)	0	1000
+Haber Weiss (mitochondria)	0	1000
+protein damage production (mitochondria)	0	1000
+protein damage exchange (mitochondria)	0	1000
+proton transport	0	1000
+proton transport (reversible)	0	1000
+hydrogen peroxide transport	0	1000
+hydrogen peroxide transport (reversible)	0	1000
+superoxide production (cytosol)	0	1000
+superoxide oxidoreductase (SOD1, cytosol)	0	1000
+hydroxyl production via peroxynitrite (cytosol)	0	1000
+glutathione peroxidase (arm, cytosol)	0	1000
+glutathione peroxidase (GPX1, cytosol)	0	1000
+glutathione peroxidase (GPX2, cytosol)	0	1000
+glutathione reductase (GLR1, cytosol)	0	1000
+thioredoxin peroxidase (arm, cytosol)	0	1000
+thioredoxin peroxidase (TRX1, cytosol)	0	1000
+thioredoxin peroxidase (TRX2, cytosol)	0	1000
+thioredoxin reductase (TRR1, cytosol)	0	1000
+draw_prot_P36014	0	1000
+draw_prot_P38143	0	1000
+draw_prot_P22217	0	1000
+draw_prot_P22803	0	1000
+draw_prot_P29509	0	1000
+hydrogen peroxide catalase (CTT1, cytosol)	0	1000
+draw_prot_P06115	0	1000
+Fenton (cytosol)	0	1000
+Haber Weiss (cytosol)	0	1000
+protein damage production (cytosol)	0	1000
+protein damage exchange (cytosol)	0	1000
+proton production (cytosol)	0	1000
+NGAM	0	1000

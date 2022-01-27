@@ -1,0 +1,6 @@
+Original files:
+"../../../../ExperimentalData/paxDBdatabase.txt" 
+"geneList.txt" 
+
+2 enzymes were not found in the data base 
+The fractional abundance of the enymes used previously (marked 0) is 0.1714, that of the new enzymes (marked 1) is 0.0085, and consequently the total new fractional abundance is 0.1799. 

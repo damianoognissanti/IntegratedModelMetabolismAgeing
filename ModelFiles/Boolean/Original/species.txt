@@ -1,0 +1,70 @@
+# id	name(s)	present	phosphorylated	oxidised	active	pathway	type	systematicName(s)
+1	exGlc	true					metabolite	
+2	ATP	true					metabolite	
+3	cAMP	false					metabolite	
+4	F16BP	false					metabolite	
+5	NH3	true					metabolite	
+6	Gpr1	true	false		false	PKA	signaling protein	YDL035C
+7	Gpa2	true	false		false	PKA	signaling protein	YER020W
+8	Krh1_2	true	false		false	PKA	signaling protein	"YAL056W;YOR371C"
+9	Cdc25	true	false		false	PKA	signaling protein	YLR310C
+10	Ras1_2	true	false		false	PKA	signaling protein	"YOR101W;YNL098C"
+11	Ira1_2	true	false		false	PKA	signaling protein	"YBR140C;YOL081W"
+12	AC	true	false		false	PKA	enzyme	
+13	Pde1_2	true	false		false	PKA	signaling protein	"YGL248W;YOR360C"
+14	Tpk1	true	false		false	PKA	signaling protein	YJL164C
+15	Tpk2	true	false		false	PKA	signaling protein	YPL203W
+16	Tpk3	true	false		false	PKA	signaling protein	YKL166C
+17	Bcy1	true	false		false	PKA	signaling protein	YIL033C
+18	PKA	false			false	PKA	protein complex	"YIL033C;YJL164C;YPL203W;YKL166C"
+19	Rim15	true	false		false	PKA	signaling protein	YFL033C
+20	Gis1	true	false		false	PKA	signaling protein	YDR096W
+21	Msn2_4	true	false		false	PKA	signaling protein	"YMR037C;YKL062W"
+22	Tos3	true	false		false	SNF1	signaling protein	YGL179C
+23	Sak1	true	false		false	SNF1	signaling protein	YER129W
+24	Elm1	true	false		false	SNF1	signaling protein	YKL048C
+25	Glc7	true	false		false	SNF1	signaling protein	YER133W
+26	Reg1	true	false		false	SNF1	signaling protein	YDR028C
+27	Sip1	true	false		false	SNF1	signaling protein	YDR422C
+28	Sip2	true	false		false	SNF1	signaling protein	YGL208W
+29	Gal83	true	false		false	SNF1	signaling protein	YER027C
+30	Snf1	true	false		false	SNF1	signaling protein	YDR477W
+31	Snf4	true	false		false	SNF1	signaling protein	YGL115W
+32	SNF	false			false	SNF1	protein Complex	
+33	Cat8	true	false		false	SNF1	signaling protein	YMR280C
+34	Sip4	true	false		false	SNF1	signaling protein	YJL089W
+35	Adr1	true	false		false	SNF1	signaling protein	YDR216W
+36	Mig1	true	false		false	SNF1	signaling protein	YGL035C
+37	EGO	true	false		false	TOR	protein complex	
+38	Tor1	true	false		false	TOR	signaling protein	YJR066W
+39	Tor2	true	false		false	TOR	signaling protein	YKL203C
+40	Kog1	true	false		false	TOR	signaling protein	YHR186C
+41	Tco89	true	false		false	TOR	signaling protein	YPL180W
+42	Lst8	true	false		false	TOR	signaling protein	YNL006W
+43	TOR	false			false	TOR	protein complex	"YJT066W;YKL203C;YHR186C;YPL180W;YNL006W"
+44	Sch9	true	false		false	TOR	signaling protein	YHR205W
+45	Sfp1	true	false		false	TOR	signaling protein	YLR403W
+46	Tap42	true	false		false	TOR	signaling protein	YMR028W
+47	PP2A	true			false	TOR	protein complex	
+48	Mks1	true	false		false	TOR	signaling protein	YNL076W
+49	Rtg2	true	false		false	TOR	signaling protein	YGL252C
+50	Rtg1_3	true	false		false	TOR	signaling protein	"YKL038W;YBL103C"
+51	Gln3	true	false		false	TOR	signaling protein	YER040W
+52	Gat1	true	false		false	TOR	signaling protein	YFL021W
+53	Pfk2	true	false		false		enzyme	YMR205C
+54	Nth1	true	false		false		enzyme	YDR001C
+55	Cdc19	true	false		false		enzyme	YAL038W
+56	Fbp1	true	false		false		enzyme	YLR377C
+57	Acc1	true	false		false		enzyme	YNR016C
+58	Hxk2	true	false		false		enzyme	YGL253W
+59	Pyk2	true	false		false		enzyme	YOR347C
+60	PDS				false		target gene	
+61	STRE				false		target gene	
+62	RTG				false		target gene	
+63	NCR				false		target gene	
+64	SUC2				false		target gene	
+65	ADH2				false		target gene	
+66	CSRE				false		target gene	
+67	PCK1				false		target gene	
+68	FBP1				false		target gene	
+69	Ribosomal				false		target gene	

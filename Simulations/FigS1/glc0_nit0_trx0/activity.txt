@@ -1,0 +1,92 @@
+# BOOLEAN MODEL ITERATIONS WITH SWITCH
+# model defined in ../../ModelFiles/Boolean/Modified/species.txt and ../../ModelFiles/Boolean/Modified/rules.txt
+# glucose false, nitrogen false, trx false
+# h2o2 switch: Bool[0, 1, 0]
+# switch at iteration [6]
+# name	pathway	initActivity	activity(11 iterations)
+exGlc		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+ATP		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+cAMP		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+F16BP		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+NH3		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+H2O2		nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing	nothing
+Gpr1	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Gpa2	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Krh1_2	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Cdc25	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Ras1_2	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Ira1_2	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+AC	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Pde1_2	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Tpk1	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Tpk2	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Tpk3	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Bcy1	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+PKA	PKA	false	false	false	false	false	false	false	false	false	false	false	false
+Rim15	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Gis1	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Msn2_4	PKA	true	true	true	true	true	true	true	true	true	true	true	true
+Tos3	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Sak1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Elm1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Glc7	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Reg1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Sip1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Sip2	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Gal83	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Snf1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Snf4	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+SNF	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Cat8	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Sip4	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Adr1	SNF1	true	true	true	true	true	true	true	true	true	true	true	true
+Mig1	SNF1	false	false	false	false	false	false	false	false	false	false	false	false
+EGO	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Tor1	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Tor2	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Kog1	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Tco89	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Lst8	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+TOR	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Sch9	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Sfp1	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Tap42	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+PP2A	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Mks1	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Rtg2	TOR	true	true	true	true	true	true	true	true	true	true	true	true
+Rtg1_3	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Gln3	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Gat1	TOR	false	false	false	false	false	false	false	false	false	false	false	false
+Gpx3	YAP1	false	false	true	true	true	true	true	true	false	false	false	false
+Ybp1	YAP1	false	true	true	true	true	true	true	false	false	false	false	false
+Pse1	YAP1	false	false	false	true	true	true	true	true	true	false	false	false
+Crm1	YAP1	true	true	false	false	false	false	false	false	true	true	true	true
+Trx1_2	YAP1	false	false	false	false	false	false	false	false	false	false	false	false
+Yap1	YAP1	false	false	false	false	true	true	true	true	true	false	false	false
+Sln1	SLN1	false	false	true	true	true	true	true	true	false	false	false	false
+Ypd1	SLN1	false	false	false	true	true	true	true	true	true	false	false	false
+Skn7	SLN1	false	false	false	false	true	true	true	true	true	true	false	false
+Pfk2		false	false	false	false	false	false	false	false	false	false	false	false
+Nth1		false	false	false	false	false	false	false	false	false	false	false	false
+Cdc19		false	false	false	false	false	false	false	false	false	false	false	false
+Fbp1		false	false	false	false	false	false	false	false	false	false	false	false
+Acc1		false	false	false	false	false	false	false	false	false	false	false	false
+Hxk2		true	true	true	true	true	true	true	true	true	true	true	true
+Pyk2		false	false	false	false	false	false	false	false	false	false	false	false
+PDS		true	true	true	true	true	true	true	true	true	true	true	true
+STRE		true	true	true	true	true	true	true	true	true	true	true	true
+RTG		false	false	false	false	false	false	false	false	false	false	false	false
+NCR		false	false	false	false	false	false	false	false	false	false	false	false
+SUC2		true	true	true	true	true	true	true	true	true	true	true	true
+ADH2		true	true	true	true	true	true	true	true	true	true	true	true
+CSRE		true	true	true	true	true	true	true	true	true	true	true	true
+PCK1		true	true	true	true	true	true	true	true	true	true	true	true
+FBP1		true	true	true	true	true	true	true	true	true	true	true	true
+Ribosomal		false	false	false	false	false	false	false	false	false	false	false	false
+TRX		false	false	false	false	false	true	true	true	true	true	false	false
+OLA1		false	false	false	false	true	true	true	true	true	true	false	false
+DNM1		false	false	false	false	true	true	true	true	true	true	false	false
+GSH1		false	false	false	false	false	true	true	true	true	true	false	false
+GLR1		false	false	false	false	false	true	true	true	true	true	false	false
+TRR1		false	false	false	false	false	true	true	true	true	true	false	false
+CTT1		true	true	true	true	true	true	true	true	true	true	true	true
