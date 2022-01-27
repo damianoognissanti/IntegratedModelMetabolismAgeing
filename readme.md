@@ -1,10 +1,13 @@
 README
 ===============
-**As part of publication: Integrated model of yeast metabolism and replicative ageing reveals importance of metabolic phases during ageing, Schnitzer and Österberg et al., 2022**
+**The repository is part of publication: Integrated model of yeast metabolism and replicative ageing reveals importance of metabolic phases during ageing, Schnitzer and Österberg et al., 2022**
+
 
 **Abstract**
 
-
+The accumulation of protein damage is one of the major drivers of replicative ageing, describing a cell’s reduced ability to reproduce over time even under optimal conditions. Reactive oxygen and nitrogen species are precursors of protein damage and therefore tightly linked to ageing. At the same time, they are an inevitable by-product of the cell’s metabolism. Cells are able to sense high levels of reactive oxygen and nitrogen species and can subsequently adapt their metabolism through gene regulation to slow down damage accumulation. However, the older or damaged a cell is the less flexibility it has to allocate enzymes across the metabolic network, forcing further adaptions in the metabolism.
+To investigate changes in the metabolism during replicative ageing and the complex interplay between them, we developed an integrated mathematical model using budding yeast as a model organism. The model consists of three interconnected modules: a Boolean model of the signalling network, an enzyme-constrained flux balance model of the central carbon metabolism and a dynamic model of growth and protein damage accumulation with discrete cell divisions.
+The model can explain known features of replicative ageing in yeast wildtype cells by a decreasing pool of functional enzymes and an increasing energy demand for maintenance. We further used the model to identify three consecutive metabolic phases, that a cell can undergo during its life, and their influence on the replicative potential, and proposed an intervention span for lifespan control.
 
 
 ## Structure of the repository
