@@ -1,6 +1,6 @@
 README
 ===============
-**The repository is part of publication: Multi-scale model suggests the trade-off between protein and ATP demand as a driver of metabolic changes during yeast replicative ageing, Schnitzer and Österberg et al., 2022** (https://www.biorxiv.org/content/10.1101/2022.03.07.483339v1)
+**The repository is part of publication: B. Schnitzer, L. Österbeg, I. Skopa, M. Cvijovic Multi-scale model suggests the trade-off between protein and ATP demand as a driver of metabolic changes during yeast replicative ageing. (2022) PLoS Comput Biol 18(7): e1010261. https://doi.org/10.1371/journal.pcbi.1010261 
 
 
 **Abstract**
