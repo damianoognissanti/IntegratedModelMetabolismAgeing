@@ -74,7 +74,7 @@ function initialiseJuMPModel(filepath::String)::FBAModel
     nFluxes = nReactions - nEnzymes - 1
     
     # set the solver environment and create a JuMP model
-    optModel = Model(optimizer_with_attributes(() -> Gurobi.Optimizer(),
+    optModel = direct_model(optimizer_with_attributes(() -> Gurobi.Optimizer(),
                      "OutputFlag" => outputFlag,
                      "FeasibilityTol" => feasibilityTol,
                      "OptimalityTol" => optimalityTol,
