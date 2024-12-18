@@ -1,0 +1,3255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="CellCycle" id="CellCycle" substanceUnits="substance" timeUnits="time_unit" volumeUnits="volume" areaUnits="area" lengthUnits="length">
+    <listOfFunctionDefinitions>
+      <functionDefinition id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> v </ci>
+            </bvar>
+            <ci> v </ci>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb5_p_1" name="Rate Law for v_Clb5_p_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> Kp_Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> MBF </ci>
+            </bvar>
+            <bvar>
+              <ci> kI_Clb5_Hog1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Clb5 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kp_Clb5 </ci>
+                  <ci> MBF </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Kp_Clb5 </ci>
+                  <ci> MBF </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> kI_Clb5_Hog1 </ci>
+                  <ci> Hog1_PP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb5_rel_1" name="Rate Law for v_Clb5_rel_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Cln2_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> n1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> Clb5_Sic1 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Cln2_Sic1 </ci>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <power/>
+                      <ci> Kpp_Cln2_Sic1 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Clb5_Sic1 </ci>
+                    <apply>
+                      <power/>
+                      <ci> Clb5 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <power/>
+                      <ci> Kpp_Clb5_Sic1 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                    <apply>
+                      <power/>
+                      <ci> Clb5 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Cln2_p_1" name="Rate Law for v_Cln2_p_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> Kp_Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> SBF </ci>
+            </bvar>
+            <bvar>
+              <ci> kI_Cln2_Hog1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Cln2 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kp_Cln2 </ci>
+                  <ci> SBF </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Kp_Cln2 </ci>
+                  <ci> SBF </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> kI_Cln2_Hog1 </ci>
+                  <ci> Hog1_PP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Cln2_rel_1" name="Rate Law for v_Cln2_rel_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln2_Far1_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Far1p </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Cln2_Far1p </ci>
+              <ci> Cln2_Far1_p </ci>
+              <ci> Cln2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_SBF_akt_1" name="Rate Law for v_SBF_akt_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln3 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Cln2_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Cln3_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> SBF_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln3_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> n_SBF </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> SBF_Whi5 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Cln3_Whi5 </ci>
+                    <ci> Cln3 </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> Kpp_Cln3_Whi5 </ci>
+                    <ci> Cln3 </ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Cln2_Whi5 </ci>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n_SBF </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <power/>
+                      <ci> Kpp_Cln2_Whi5 </ci>
+                      <ci> n_SBF </ci>
+                    </apply>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n_SBF </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_SBF_inakt_Clb2_1" name="Rate Law for v_SBF_inakt_Clb2_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> SBF </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_SBF_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_SBF_Clb2 </ci>
+              <ci> SBF </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_SBF_dp_1" name="Rate Law for v_SBF_dp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cdc14_p </ci>
+            </bvar>
+            <bvar>
+              <ci> SBF_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kdp_SBF </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kdp_SBF </ci>
+              <ci> SBF_p </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Whi5_pp_1" name="Rate Law for v_Whi5_pp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln3 </ci>
+            </bvar>
+            <bvar>
+              <ci> Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Whi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln3_Whi5 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> Whi5 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> kpp_Cln2_Whi5 </ci>
+                  <ci> Cln2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> kpp_Cln3_Whi5 </ci>
+                  <ci> Cln3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Whi5p_dp_1" name="Rate Law for v_Whi5p_dp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cdc14_p </ci>
+            </bvar>
+            <bvar>
+              <ci> Whi5_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kdp_Whi5 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> Whi5_p </ci>
+              <ci> kdp_Whi5 </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_APC_inakt_Clb2_1" name="Rate Law for v_APC_inakt_Clb2_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_APC_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_APC_Clb2 </ci>
+              <ci> APC </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Swi5_p_1" name="Rate Law for v_Swi5_p_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Kp_Swi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Swi5 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_Swi5 </ci>
+                <ci> Mcm1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Kp_Swi5 </ci>
+                <ci> Mcm1 </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Swi5_pp_Clb5_1" name="Rate Law for v_Swi5_pp_Clb5_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Swi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Swi5_Clb5 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Swi5_Clb5 </ci>
+              <ci> Swi5 </ci>
+              <ci> Clb5 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb3_d_APC_1" name="Rate Law for v_Clb3_d_APC_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb3 </ci>
+            </bvar>
+            <bvar>
+              <ci> kd_Clb3_APC </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kd_Clb3_APC </ci>
+              <ci> Clb3 </ci>
+              <ci> APC </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_law_for_v_APC_akt_Cdc14_1" name="Rate law for v_APC_akt_Cdc14_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC_p </ci>
+            </bvar>
+            <bvar>
+              <ci> Cdc14_p </ci>
+            </bvar>
+            <bvar>
+              <ci> ka_APC_Cdc14 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> ka_APC_Cdc14 </ci>
+              <ci> APC_p </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb5_Sic1_pp_Hog1_1" name="Rate Law for v_Clb5_Sic1_pp_Hog1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Clb5_Sic1_Hog1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Clb5_Sic1_Hog1 </ci>
+              <ci> Hog1_PP </ci>
+              <ci> Clb5_Sic1 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb5_d_APC_1" name="Rate Law for v_Clb5_d_APC_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kd_Clb5_APC </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kd_Clb5_APC </ci>
+              <ci> Clb5 </ci>
+              <ci> APC </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb2_pp_2_1" name="Rate Law for v_Clb2_pp_2_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Swe1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Swe1_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Swe1_Clb2 </ci>
+              <ci> Swe1 </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Swe1_Hog1_1" name="Rate Law for v_Swe1_Hog1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> Swe1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kI_Swe1_Hog1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Swe1_Hls1 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kpp_Swe1_Hls1 </ci>
+                <ci> Swe1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> kI_Swe1_Hog1 </ci>
+                  <ci> Hog1_PP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Mcm1_p_Clb2_fb_1" name="Rate Law for v_Mcm1_p_Clb2_fb_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kp_Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> n_Mcm1 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_Mcm1 </ci>
+                <apply>
+                  <power/>
+                  <ci> Clb2 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> Kp_Mcm1 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Clb2 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb2_dp_1_1" name="Rate Law for v_Clb2_dp_1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2_p </ci>
+            </bvar>
+            <bvar>
+              <ci> Mih1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kdp_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kdp_Clb2 </ci>
+              <ci> Clb2_p </ci>
+              <ci> Mih1 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_APC_inakt_Clb5_1" name="Rate Law for v_APC_inakt_Clb5_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_APC_Clb5 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_APC_Clb5 </ci>
+              <ci> APC </ci>
+              <ci> Clb5 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Cln3_rel_1" name="Rate Law for v_Cln3_rel_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln3_Far1_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Far1p </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Cln2_Far1p </ci>
+              <ci> Cln3_Far1_p </ci>
+              <ci> Cln2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Sic1_pp_Hog1_1" name="Rate Law for v_Sic1_pp_Hog1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Sic1_Hog1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Sic1_Hog1 </ci>
+              <ci> Hog1_PP </ci>
+              <ci> Sic1 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Far1_p_1" name="Rate Law for v_Far1_p_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Fus3 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Far1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_basal_Far1 </ci>
+            </bvar>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <ci> kp_Far1 </ci>
+                <ci> Fus3 </ci>
+              </apply>
+              <ci> kp_basal_Far1 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb2_d_APC_1" name="Rate Law for v_Clb2_d_APC_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> kd_Clb2_APC </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kd_Clb2_APC </ci>
+              <ci> Clb2 </ci>
+              <ci> APC </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_law_for_v_Cdc14_akt_APC_1" name="Rate law for v_Cdc14_akt_APC_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Cdc14 </ci>
+            </bvar>
+            <bvar>
+              <ci> ka_Cdc14_APC </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> ka_Cdc14_APC </ci>
+              <ci> Cdc14 </ci>
+              <ci> APC </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_MBF_akt_1" name="Rate Law for v_MBF_akt_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> K_MBF </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_MBF </ci>
+            </bvar>
+            <bvar>
+              <ci> n1 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_MBF </ci>
+                <apply>
+                  <power/>
+                  <ci> Cln2 </ci>
+                  <ci> n1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_MBF </ci>
+                  <ci> n1 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Cln2 </ci>
+                  <ci> n1 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Sic1_pp_1" name="Rate Law for v_Sic1_pp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kpp_Cln2_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Clb5_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cln2_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> n1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> Sic1 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Cln2_Sic1 </ci>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <power/>
+                      <ci> Kpp_Cln2_Sic1 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                    <apply>
+                      <power/>
+                      <ci> Cln2 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> kpp_Clb5_Sic1 </ci>
+                    <apply>
+                      <power/>
+                      <ci> Clb5 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <power/>
+                      <ci> Kpp_Clb5_Sic1 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                    <apply>
+                      <power/>
+                      <ci> Clb5 </ci>
+                      <ci> n1 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb2_p_1_1" name="Rate Law for v_Clb2_p_1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Hog1_PP </ci>
+            </bvar>
+            <bvar>
+              <ci> Kp_Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kI_Clb2_Hog1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Clb2 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> kp_Clb2 </ci>
+                  <ci> Mcm1 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> Kp_Clb2 </ci>
+                  <ci> Mcm1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn type="integer"> 1 </cn>
+                <apply>
+                  <times/>
+                  <ci> kI_Clb2_Hog1 </ci>
+                  <ci> Hog1_PP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb2_pp_1_1" name="Rate Law for v_Clb2_pp_1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Swe1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Clb2 </ci>
+              <ci> Clb2 </ci>
+              <ci> Swe1 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Cdc14_akt_Clb2_1" name="Rate Law for v_Cdc14_akt_Clb2_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cdc14 </ci>
+            </bvar>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cdc14_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Cdc14_Clb2 </ci>
+              <ci> Cdc14 </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Sic1_p_1" name="Rate Law for v_Sic1_p_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Kp_Sic1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Swi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Sic1 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_Sic1 </ci>
+                <ci> Swi5 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Kp_Sic1 </ci>
+                <ci> Swi5 </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Mcm1_p_basal_1" name="Rate Law for v_Mcm1_p_basal_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb3 </ci>
+            </bvar>
+            <bvar>
+              <ci> V0_Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> n_Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> v0_Mcm1 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> v0_Mcm1 </ci>
+                <apply>
+                  <power/>
+                  <ci> Clb3 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> V0_Mcm1 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Clb3 </ci>
+                  <ci> n_Mcm1 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_law_for_v_Cdc14_akt_MEN_fb_1" name="Rate law for v_Cdc14_akt_MEN_fb_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cdc14 </ci>
+            </bvar>
+            <bvar>
+              <ci> Cdc14_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Cdc14_MEN </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Cdc14_MEN </ci>
+              <ci> Cdc14 </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_APC_akt_p_Mcm1_1" name="Rate Law for v_APC_akt_p_Mcm1_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Kp_APC </ci>
+            </bvar>
+            <bvar>
+              <ci> Mcm1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_APC </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_APC </ci>
+                <ci> Mcm1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Kp_APC </ci>
+                <ci> Mcm1 </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Swi5_dp_1" name="Rate Law for v_Swi5_dp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cdc14_p </ci>
+            </bvar>
+            <bvar>
+              <ci> Swi5_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kdp_Swi5_Cdc14 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kdp_Swi5_Cdc14 </ci>
+              <ci> Swi5_p </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Swi5_pp_Clb2_1" name="Rate Law for v_Swi5_pp_Clb2_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Swi5 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Swi5_Clb2 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Swi5_Clb2 </ci>
+              <ci> Swi5 </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Clb3_p_Clb5_1" name="Rate Law for v_Clb3_p_Clb5_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Clb5 </ci>
+            </bvar>
+            <bvar>
+              <ci> Kp_Clb3 </ci>
+            </bvar>
+            <bvar>
+              <ci> kp_Clb3 </ci>
+            </bvar>
+            <bvar>
+              <ci> n_Clb3 </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> kp_Clb3 </ci>
+                <apply>
+                  <power/>
+                  <ci> Clb5 </ci>
+                  <ci> n_Clb3 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> Kp_Clb3 </ci>
+                  <ci> n_Clb3 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Clb5 </ci>
+                  <ci> n_Clb3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Far1_dd_1" name="Rate Law for v_Far1_dd_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Far1 </ci>
+            </bvar>
+            <bvar>
+              <ci> kdd_Far1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kdd_Far1 </ci>
+              <ci> Far1 </ci>
+              <ci> Cln2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Far1_pp_1" name="Rate Law for v_Far1_pp_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Far1 </ci>
+            </bvar>
+            <bvar>
+              <ci> Fus3 </ci>
+            </bvar>
+            <bvar>
+              <ci> kpp_Far1 </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kpp_Far1 </ci>
+              <ci> Far1 </ci>
+              <ci> Fus3 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition id="Rate_Law_for_v_Far1_p_dd_1" name="Rate Law for v_Far1_p_dd_1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> Cln2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Far1_p </ci>
+            </bvar>
+            <bvar>
+              <ci> kdd_Far1p </ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci> kdd_Far1p </ci>
+              <ci> Far1_p </ci>
+              <ci> Cln2 </ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+    </listOfFunctionDefinitions>
+    <listOfUnitDefinitions>
+      <unitDefinition id="substance">
+        <listOfUnits>
+          <unit kind="item" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="length">
+        <listOfUnits>
+          <unit kind="metre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="area">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="volume">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="-15" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="time_unit" name="time">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="-2" multiplier="6"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment_1" name="volume" spatialDimensions="3" size="50" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Clb5" compartment="compartment_1" initialAmount="0.0055095267392" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb5_Sic1" compartment="compartment_1" initialAmount="0.89919603461" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb5_Sic1_Hp" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cln2" compartment="compartment_1" initialAmount="0.390588672104" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cln2_Far1_p" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cln3" compartment="compartment_1" initialAmount="70.2499994605" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Far1" compartment="compartment_1" initialAmount="253.1708654155" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Far1_p" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="MBF" compartment="compartment_1" initialAmount="0.0268170651527" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="SBF" compartment="compartment_1" initialAmount="0.0616005253745" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="SBF_p" compartment="compartment_1" initialAmount="0.000515873455915" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="SBF_Whi5" compartment="compartment_1" initialAmount="349.937883622" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Sic1" compartment="compartment_1" initialAmount="285.604158558" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Sic1_p" compartment="compartment_1" initialAmount="0.612700299515" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Sic1_Hp" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Whi5" compartment="compartment_1" initialAmount="620.374730215" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Whi5_p" compartment="compartment_1" initialAmount="52.41210074" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb2" compartment="compartment_1" initialAmount="0.327003199617" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb2_p" compartment="compartment_1" initialAmount="1.13255806709" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Swe1" compartment="compartment_1" initialAmount="16.5140084901" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Swe1_p" compartment="compartment_1" initialAmount="263.70599151" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mcm1" compartment="compartment_1" initialAmount="198.280009914" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="APC" compartment="compartment_1" initialAmount="47.7610290701" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="APC_p" compartment="compartment_1" initialAmount="0.0410087523757" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdc14" compartment="compartment_1" initialAmount="3421.56928094" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdc14_p" compartment="compartment_1" initialAmount="338.4307188605" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mih1" compartment="compartment_1" initialAmount="107" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Swi5" compartment="compartment_1" initialAmount="571.275477765" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Swi5_p" compartment="compartment_1" initialAmount="1.10259641365" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Hog1_PP" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Fus3" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb2_Sic1" compartment="compartment_1" initialAmount="22.84051778295" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb3" compartment="compartment_1" initialAmount="1.622362084625" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cln3_Far1_p" compartment="compartment_1" initialAmount="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Clb3_Sic1" compartment="compartment_1" initialAmount="277.885559446" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="Kp_Clb5" value="1" constant="true"/>
+      <parameter id="kI_Clb5_Hog1" value="1" constant="true"/>
+      <parameter id="kp_Clb5" value="1.87453125" constant="true"/>
+      <parameter id="kd_Clb5" value="0.187825" constant="true"/>
+      <parameter id="kcf_Clb5_Sic1" value="30" constant="true"/>
+      <parameter id="kcf_Clb5_Sic1_Hp" value="600" constant="true"/>
+      <parameter id="Kpp_Clb5_Sic1" value="24.99" constant="true"/>
+      <parameter id="Kpp_Cln2_Sic1" value="40" constant="true"/>
+      <parameter id="kpp_Clb5_Sic1" value="21" constant="true"/>
+      <parameter id="kpp_Cln2_Sic1" value="0.43" constant="true"/>
+      <parameter id="n1" value="6" constant="true"/>
+      <parameter id="kd_Clb5_Sic1" value="0.1" constant="true"/>
+      <parameter id="Kp_Cln2" value="22.025" constant="true"/>
+      <parameter id="kI_Cln2_Hog1" value="20.029" constant="true"/>
+      <parameter id="kp_Cln2" value="28.0496125" constant="true"/>
+      <parameter id="kd_Cln2" value="0.2267" constant="true"/>
+      <parameter id="kcf_Cln2_Far1p" value="6" constant="true"/>
+      <parameter id="kpp_Cln2_Far1p" value="36" constant="true"/>
+      <parameter id="kd_Cln2_Far1p" value="0.1" constant="true"/>
+      <parameter id="kp_Cln3" value="0.01405" constant="true"/>
+      <parameter id="kd_Cln3" value="0.01" constant="true"/>
+      <parameter id="Kpp_Cln2_Whi5" value="1.001" constant="true"/>
+      <parameter id="Kpp_Cln3_Whi5" value="85.0316195" constant="true"/>
+      <parameter id="kpp_Cln2_Whi5" value="2.0105" constant="true"/>
+      <parameter id="kpp_Cln3_Whi5" value="0.4032023" constant="true"/>
+      <parameter id="n_SBF" value="4" constant="true"/>
+      <parameter id="kcf_SBF_Whi5" value="3" constant="true"/>
+      <parameter id="kpp_SBF_Clb2" value="4.058984" constant="true"/>
+      <parameter id="kdp_SBF" value="0.5" constant="true"/>
+      <parameter id="kp_Whi5" value="0.16533" constant="true"/>
+      <parameter id="kd_Whi5" value="0.01" constant="true"/>
+      <parameter id="kdp_Whi5" value="1" constant="true"/>
+      <parameter id="K_MBF" name="Kp_MBF" value="1" constant="true"/>
+      <parameter id="kp_MBF" value="3" constant="true"/>
+      <parameter id="kd_MBF" value="0.2527" constant="true"/>
+      <parameter id="Kp_Sic1" value="15.028" constant="true"/>
+      <parameter id="kp_Sic1" value="3.169628" constant="true"/>
+      <parameter id="kd_Sic1" value="0.1" constant="true"/>
+      <parameter id="kd_Sic1p" value="0.1" constant="true"/>
+      <parameter id="kpp_Sic1_Hog1" value="10" constant="true"/>
+      <parameter id="kpp_Clb5_Sic1_Hog1" value="10" constant="true"/>
+      <parameter id="kdp_Sic1_Hp" value="1.5115" constant="true"/>
+      <parameter id="kdp_Clb5_Sic1_Hp" value="0.2" constant="true"/>
+      <parameter id="kp_Far1" value="2.99896964" constant="true"/>
+      <parameter id="kp_basal_Far1" value="0.14066" constant="true"/>
+      <parameter id="kd_Far1" value="0.02" constant="true"/>
+      <parameter id="kd_Far1p" value="0.1" constant="true"/>
+      <parameter id="V0_Mcm1" value="20.404" constant="true"/>
+      <parameter id="n_Mcm1" value="3" constant="true"/>
+      <parameter id="v0_Mcm1" value="40.050851" constant="true"/>
+      <parameter id="Kp_Mcm1" value="2.5" constant="true"/>
+      <parameter id="kp_Mcm1" value="60" constant="true"/>
+      <parameter id="kd_Mcm1" value="0.30555" constant="true"/>
+      <parameter id="Kp_Clb2" value="5000" constant="true"/>
+      <parameter id="kI_Clb2_Hog1" value="0.0001" constant="true"/>
+      <parameter id="kp_Clb2" value="121.568756607" constant="true"/>
+      <parameter id="kd_Clb2" value="0.025" constant="true"/>
+      <parameter id="kd_Clb2_APC" value="0.604" constant="true"/>
+      <parameter id="kpp_Clb2" value="350.267663" constant="true"/>
+      <parameter id="kdp_Clb2" value="15.7842816" constant="true"/>
+      <parameter id="kp_Swe1" value="0.56044" constant="true"/>
+      <parameter id="kd_Swe1" value="0.1" constant="true"/>
+      <parameter id="kpp_Swe1_Clb2" value="0.0995" constant="true"/>
+      <parameter id="kd_Swe1_p" value="0.1" constant="true"/>
+      <parameter id="kI_Swe1_Hog1" value="100.1" constant="true"/>
+      <parameter id="kpp_Swe1_Hls1" value="1.596" constant="true"/>
+      <parameter id="kpp_Cdc14_Clb2" value="0.00700465" constant="true"/>
+      <parameter id="kpp_Cdc14_MEN" value="1e-05" constant="true"/>
+      <parameter id="ka_Cdc14_APC" value="0.5028" constant="true"/>
+      <parameter id="ki_Cdc14" value="5.029219" constant="true"/>
+      <parameter id="Kp_APC" value="94288.25" constant="true"/>
+      <parameter id="kp_APC" value="671.037047" constant="true"/>
+      <parameter id="ka_APC_Cdc14" value="3" constant="true"/>
+      <parameter id="kpp_APC_Clb2" value="1.0093466795" constant="true"/>
+      <parameter id="kpp_APC_Clb5" value="100" constant="true"/>
+      <parameter id="kd_APC" value="0.22" constant="true"/>
+      <parameter id="kd_APC_p" value="0.5" constant="true"/>
+      <parameter id="kdp_Swi5_Cdc14" value="50" constant="true"/>
+      <parameter id="Kp_Swi5" value="1000" constant="true"/>
+      <parameter id="kp_Swi5" value="2.392008424" constant="true"/>
+      <parameter id="kd_Swi5" value="0.013" constant="true"/>
+      <parameter id="kpp_Swi5_Clb2" value="99.8" constant="true"/>
+      <parameter id="kpp_Swi5_Clb5" value="0.5005" constant="true"/>
+      <parameter id="kp_Mih1" value="0.214" constant="true"/>
+      <parameter id="kd_Mih1" value="0.1" constant="true"/>
+      <parameter id="Kp_Clb3" value="1" constant="true"/>
+      <parameter id="kp_Clb3" value="0.368352" constant="true"/>
+      <parameter id="n_Clb3" value="3" constant="true"/>
+      <parameter id="kd_Whi5p" value="0.01" constant="true"/>
+      <parameter id="kcf_Clb2_Sic1" value="15" constant="true"/>
+      <parameter id="kd_Clb2_Sic1" value="0.5" constant="true"/>
+      <parameter id="kd_Clb3" value="0.005" constant="true"/>
+      <parameter id="kd_Clb3_APC" value="0.05" constant="true"/>
+      <parameter id="kcf_Cln3_Far1p" value="6" constant="true"/>
+      <parameter id="kcd_Cln3_Far1p" value="0.5" constant="true"/>
+      <parameter id="kd_Cln3_Far1p" value="0.0005" constant="true"/>
+      <parameter id="kdd_Far1" value="0.0033" constant="true"/>
+      <parameter id="kpp_Far1" value="10" constant="true"/>
+      <parameter id="kdp_Far1p" value="0.05" constant="true"/>
+      <parameter id="kcd_Cln2_Far1p" value="0.5" constant="true"/>
+      <parameter id="kcf_Clb3_Sic1" value="30" constant="true"/>
+      <parameter id="kdd_Far1p" value="0.05" constant="true"/>
+      <parameter id="kd_Clb3_Sic1" value="0.01" constant="true"/>
+      <parameter id="kd_Clb5_APC" value="1.001" constant="true"/>
+      <parameter id="kd_Clb2_p" value="0.025" constant="true"/>
+      <parameter id="kd_Swi5_p" value="0.013" constant="true"/>
+      <parameter id="kcd_Clb2_Sic1" value="1" constant="true"/>
+      <parameter id="kcd_Clb5_Sic1" value="1" constant="true"/>
+      <parameter id="kcd_Clb3_Sic1" value="1" constant="true"/>
+      <parameter id="kcd_Clb5_Sic1_Hp" value="2" constant="true"/>
+      <parameter id="nutrition_factor" value="1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="reaction_1" name="v_Clb5_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+          <modifierSpeciesReference species="MBF"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb5_p_1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> Kp_Clb5 </ci>
+                <ci> MBF </ci>
+                <ci> kI_Clb5_Hog1 </ci>
+                <ci> kp_Clb5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_2" name="v_Clb5_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb5 </ci>
+              <ci> Clb5 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_3" name="v_Clb5_ass_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Clb5_Sic1 </ci>
+              <ci> Clb5 </ci>
+              <ci> Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_4" name="v_Clb5_ass_Sic1_Hp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5_Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Clb5_Sic1_Hp </ci>
+              <ci> Clb5 </ci>
+              <ci> Sic1_Hp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_5" name="v_Clb5_rel" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb5_rel_1 </ci>
+                <ci> Clb5 </ci>
+                <ci> Clb5_Sic1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Kpp_Clb5_Sic1 </ci>
+                <ci> Kpp_Cln2_Sic1 </ci>
+                <ci> kpp_Clb5_Sic1 </ci>
+                <ci> kpp_Cln2_Sic1 </ci>
+                <ci> n1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_6" name="v_Clb5_Sic1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb5_Sic1 </ci>
+              <ci> Clb5_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_7" name="v_Cln2_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cln2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+          <modifierSpeciesReference species="SBF"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Cln2_p_1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> Kp_Cln2 </ci>
+                <ci> SBF </ci>
+                <ci> kI_Cln2_Hog1 </ci>
+                <ci> kp_Cln2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_8" name="v_Cln2_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Cln2 </ci>
+              <ci> Cln2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_9" name="v_Cln2_ass_Far1p" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln2_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Cln2_Far1p </ci>
+              <ci> Cln2 </ci>
+              <ci> Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_10" name="v_Cln2_rel" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln2_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Cln2_rel_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Cln2_Far1_p </ci>
+                <ci> kpp_Cln2_Far1p </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_11" name="v_Cln2_Far1p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln2_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Cln2_Far1p </ci>
+              <ci> Cln2_Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_12" name="v_Cln3_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cln3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Constant_flux__irreversible </ci>
+                <ci> kp_Cln3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_13" name="v_Cln3_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Cln3 </ci>
+              <ci> Cln3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_14" name="v_SBF_akt" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SBF_Whi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SBF" stoichiometry="1" constant="true"/>
+          <speciesReference species="Whi5_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+          <modifierSpeciesReference species="Cln3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_SBF_akt_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Cln3 </ci>
+                <ci> Kpp_Cln2_Whi5 </ci>
+                <ci> Kpp_Cln3_Whi5 </ci>
+                <ci> SBF_Whi5 </ci>
+                <ci> kpp_Cln2_Whi5 </ci>
+                <ci> kpp_Cln3_Whi5 </ci>
+                <ci> n_SBF </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_15" name="v_SBF_ass_Whi5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SBF" stoichiometry="1" constant="true"/>
+          <speciesReference species="Whi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SBF_Whi5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_SBF_Whi5 </ci>
+              <ci> SBF </ci>
+              <ci> Whi5 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_16" name="v_SBF_inakt_Clb2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SBF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SBF_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_SBF_inakt_Clb2_1 </ci>
+                <ci> Clb2 </ci>
+                <ci> SBF </ci>
+                <ci> kpp_SBF_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_17" name="v_SBF_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="SBF_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SBF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc14_p"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_SBF_dp_1 </ci>
+                <ci> Cdc14_p </ci>
+                <ci> SBF_p </ci>
+                <ci> kdp_SBF </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_18" name="v_Whi5_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Whi5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Constant_flux__irreversible </ci>
+                <ci> kp_Whi5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_19" name="v_Whi5_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Whi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Whi5 </ci>
+              <ci> Whi5 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_20" name="v_Whi5_pp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Whi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Whi5_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+          <modifierSpeciesReference species="Cln3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Whi5_pp_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Cln3 </ci>
+                <ci> Whi5 </ci>
+                <ci> kpp_Cln2_Whi5 </ci>
+                <ci> kpp_Cln3_Whi5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_21" name="v_Whi5p_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Whi5_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Whi5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc14_p"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Whi5p_dp_1 </ci>
+                <ci> Cdc14_p </ci>
+                <ci> Whi5_p </ci>
+                <ci> kdp_Whi5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_22" name="v_MBF_akt" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="MBF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_MBF_akt_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> K_MBF </ci>
+                <ci> kp_MBF </ci>
+                <ci> n1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_23" name="v_MBF_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="MBF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_MBF </ci>
+              <ci> MBF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_24" name="v_Sic1_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Swi5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Sic1_p_1 </ci>
+                <ci> Kp_Sic1 </ci>
+                <ci> Swi5 </ci>
+                <ci> kp_Sic1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_25" name="v_Sic1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Sic1 </ci>
+              <ci> Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_26" name="v_Sic1_pp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Sic1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb5"/>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Sic1_pp_1 </ci>
+                <ci> Clb5 </ci>
+                <ci> Cln2 </ci>
+                <ci> Kpp_Clb5_Sic1 </ci>
+                <ci> Kpp_Cln2_Sic1 </ci>
+                <ci> Sic1 </ci>
+                <ci> kpp_Clb5_Sic1 </ci>
+                <ci> kpp_Cln2_Sic1 </ci>
+                <ci> n1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_27" name="v_Sic1_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Sic1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Sic1p </ci>
+              <ci> Sic1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_28" name="v_Sic1_pp_Hog1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Sic1_pp_Hog1_1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> Sic1 </ci>
+                <ci> kpp_Sic1_Hog1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_29" name="v_Clb5_Sic1_pp_Hog1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5_Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb5_Sic1_pp_Hog1_1 </ci>
+                <ci> Clb5_Sic1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> kpp_Clb5_Sic1_Hog1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_30" name="v_Sic1_Hp_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kdp_Sic1_Hp </ci>
+              <ci> Sic1_Hp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_31" name="v_Clb5_Sic1_Hp_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kdp_Clb5_Sic1_Hp </ci>
+              <ci> Clb5_Sic1_Hp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_32" name="v_Far1_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Far1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Fus3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Far1_p_1 </ci>
+                <ci> Fus3 </ci>
+                <ci> kp_Far1 </ci>
+                <ci> kp_basal_Far1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_33" name="v_Far1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Far1 </ci>
+              <ci> Far1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_34" name="v_Far1p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Far1p </ci>
+              <ci> Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_35" name="v_Mcm1_p_basal" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Mcm1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Mcm1_p_basal_1 </ci>
+                <ci> Clb3 </ci>
+                <ci> V0_Mcm1 </ci>
+                <ci> n_Mcm1 </ci>
+                <ci> v0_Mcm1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_36" name="v_Mcm1_p_Clb2_fb" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Mcm1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Mcm1_p_Clb2_fb_1 </ci>
+                <ci> Clb2 </ci>
+                <ci> Kp_Mcm1 </ci>
+                <ci> kp_Mcm1 </ci>
+                <ci> n_Mcm1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_37" name="v_Mcm1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mcm1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Mcm1 </ci>
+              <ci> Mcm1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_38" name="v_Clb2_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+          <modifierSpeciesReference species="Mcm1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb2_p_1_1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> Kp_Clb2 </ci>
+                <ci> Mcm1 </ci>
+                <ci> kI_Clb2_Hog1 </ci>
+                <ci> kp_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_39" name="v_Clb2_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb2 </ci>
+              <ci> Clb2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_40" name="v_Clb2_d_APC" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="APC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb2_d_APC_1 </ci>
+                <ci> APC </ci>
+                <ci> Clb2 </ci>
+                <ci> kd_Clb2_APC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_41" name="v_Clb2_pp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb2_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Swe1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb2_pp_1_1 </ci>
+                <ci> Clb2 </ci>
+                <ci> Swe1 </ci>
+                <ci> kpp_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_42" name="v_Clb2_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mih1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb2_dp_1_1 </ci>
+                <ci> Clb2_p </ci>
+                <ci> Mih1 </ci>
+                <ci> kdp_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_43" name="v_Swe1_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Swe1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Constant_flux__irreversible </ci>
+                <ci> kp_Swe1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_44" name="v_Swe1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swe1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Swe1 </ci>
+              <ci> Swe1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_45" name="v_Swe1_pp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swe1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Swe1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb2_pp_2_1 </ci>
+                <ci> Clb2 </ci>
+                <ci> Swe1 </ci>
+                <ci> kpp_Swe1_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_46" name="v_Swe1_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swe1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Swe1_p </ci>
+              <ci> Swe1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_47" name="v_Swe1_Hog1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swe1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Swe1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Hog1_PP"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Swe1_Hog1_1 </ci>
+                <ci> Hog1_PP </ci>
+                <ci> Swe1 </ci>
+                <ci> kI_Swe1_Hog1 </ci>
+                <ci> kpp_Swe1_Hls1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_48" name="v_Cdc14_akt_Clb2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc14" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc14_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Cdc14_akt_Clb2_1 </ci>
+                <ci> Cdc14 </ci>
+                <ci> Clb2 </ci>
+                <ci> kpp_Cdc14_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_49" name="v_Cdc14_akt_MEN_fb" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc14" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc14_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_law_for_v_Cdc14_akt_MEN_fb_1 </ci>
+                <ci> Cdc14 </ci>
+                <ci> Cdc14_p </ci>
+                <ci> kpp_Cdc14_MEN </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_50" name="v_Cdc14_akt_APC" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc14" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc14_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="APC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_law_for_v_Cdc14_akt_APC_1 </ci>
+                <ci> APC </ci>
+                <ci> Cdc14 </ci>
+                <ci> ka_Cdc14_APC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_51" name="v_Cdc14_inakt" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc14_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc14" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> ki_Cdc14 </ci>
+              <ci> Cdc14_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_52" name="v_APC_akt_p_Mcm1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="APC" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mcm1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_APC_akt_p_Mcm1_1 </ci>
+                <ci> Kp_APC </ci>
+                <ci> Mcm1 </ci>
+                <ci> kp_APC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_53" name="v_APC_akt_Cdc14" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="APC_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APC" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc14_p"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_law_for_v_APC_akt_Cdc14_1 </ci>
+                <ci> APC_p </ci>
+                <ci> Cdc14_p </ci>
+                <ci> ka_APC_Cdc14 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_54" name="v_APC_inakt_Clb2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="APC" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APC_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_APC_inakt_Clb2_1 </ci>
+                <ci> APC </ci>
+                <ci> Clb2 </ci>
+                <ci> kpp_APC_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_55" name="v_APC_inakt_Clb5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="APC" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APC_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_APC_inakt_Clb5_1 </ci>
+                <ci> APC </ci>
+                <ci> Clb5 </ci>
+                <ci> kpp_APC_Clb5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_56" name="v_APC_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="APC" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_APC </ci>
+              <ci> APC </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_57" name="v_APC_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="APC_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_APC_p </ci>
+              <ci> APC_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_58" name="v_Swi5_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swi5_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Swi5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc14_p"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Swi5_dp_1 </ci>
+                <ci> Cdc14_p </ci>
+                <ci> Swi5_p </ci>
+                <ci> kdp_Swi5_Cdc14 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_59" name="v_Swi5_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Swi5" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mcm1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Swi5_p_1 </ci>
+                <ci> Kp_Swi5 </ci>
+                <ci> Mcm1 </ci>
+                <ci> kp_Swi5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_60" name="v_Swi5_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Swi5 </ci>
+              <ci> Swi5 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_61" name="v_Swi5_pp_Clb2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Swi5_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Swi5_pp_Clb2_1 </ci>
+                <ci> Clb2 </ci>
+                <ci> Swi5 </ci>
+                <ci> kpp_Swi5_Clb2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_62" name="v_Swi5_pp_Clb5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swi5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Swi5_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Swi5_pp_Clb5_1 </ci>
+                <ci> Clb5 </ci>
+                <ci> Swi5 </ci>
+                <ci> kpp_Swi5_Clb5 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_63" name="v_Mih1_p" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Mih1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Constant_flux__irreversible </ci>
+                <ci> kp_Mih1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_64" name="v_Mih1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mih1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Mih1 </ci>
+              <ci> Mih1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_65" name="v_Clb3_p_Clb5" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Clb3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Clb5"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb3_p_Clb5_1 </ci>
+                <ci> Clb5 </ci>
+                <ci> Kp_Clb3 </ci>
+                <ci> kp_Clb3 </ci>
+                <ci> n_Clb3 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_66" name="v_Whi5_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Whi5_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Whi5p </ci>
+              <ci> Whi5_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_67" name="v_Clb2_ass_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb2_Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Clb2_Sic1 </ci>
+              <ci> Clb2 </ci>
+              <ci> Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_68" name="v_Clb2_Sic1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb2_Sic1 </ci>
+              <ci> Clb2_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_70" name="v_Clb3_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb3 </ci>
+              <ci> Clb3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_71" name="v_Clb3_d_APC" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="APC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb3_d_APC_1 </ci>
+                <ci> APC </ci>
+                <ci> Clb3 </ci>
+                <ci> kd_Clb3_APC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_72" name="v_Cln3_ass_Far1p" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln3" stoichiometry="1" constant="true"/>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln3_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Cln3_Far1p </ci>
+              <ci> Cln3 </ci>
+              <ci> Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_73" name="v_Cln3_diss_Far1p" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln3_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln3" stoichiometry="1" constant="true"/>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Cln3_Far1p </ci>
+              <ci> Cln3_Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_74" name="v_Cln3_rel" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln3_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Cln3_rel_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Cln3_Far1_p </ci>
+                <ci> kpp_Cln2_Far1p </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_75" name="v_Cln3_Far1p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln3_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Cln3_Far1p </ci>
+              <ci> Cln3_Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_76" name="v_Far1_dd" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Far1_dd_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Far1 </ci>
+                <ci> kdd_Far1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_77" name="v_Far1_pp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Fus3"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Far1_pp_1 </ci>
+                <ci> Far1 </ci>
+                <ci> Fus3 </ci>
+                <ci> kpp_Far1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_78" name="v_Far1p_dp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Far1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kdp_Far1p </ci>
+              <ci> Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_79" name="v_Cln2_diss_Far1p" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cln2_Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cln2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Cln2_Far1p </ci>
+              <ci> Cln2_Far1_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_80" name="v_Clb3_ass_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb3" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb3_Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcf_Clb3_Sic1 </ci>
+              <ci> Clb3 </ci>
+              <ci> Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_81" name="v_Far1_p_dd" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Far1_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cln2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Far1_p_dd_1 </ci>
+                <ci> Cln2 </ci>
+                <ci> Far1_p </ci>
+                <ci> kdd_Far1p </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_82" name="v_Clb3_Sic1_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb3_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb3_Sic1 </ci>
+              <ci> Clb3_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_83" name="v_Clb5_d_APC" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="APC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <apply>
+                <ci> Rate_Law_for_v_Clb5_d_APC_1 </ci>
+                <ci> APC </ci>
+                <ci> Clb5 </ci>
+                <ci> kd_Clb5_APC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Clb2_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Clb2_p </ci>
+              <ci> Clb2_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Swi5_p_d" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Swi5_p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kd_Swi5_p </ci>
+              <ci> Swi5_p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Clb2_diss_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb2_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Clb2_Sic1 </ci>
+              <ci> Clb2_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Clb5_diss_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Clb5_Sic1 </ci>
+              <ci> Clb5_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Clb3_diss_Sic1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb3_Sic1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb3" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Clb3_Sic1 </ci>
+              <ci> Clb3_Sic1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="v_Clb5_diss_Sic1_Hp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Clb5_Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Clb5" stoichiometry="1" constant="true"/>
+          <speciesReference species="Sic1_Hp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_1 </ci>
+              <ci> kcd_Clb5_Sic1_Hp </ci>
+              <ci> Clb5_Sic1_Hp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
