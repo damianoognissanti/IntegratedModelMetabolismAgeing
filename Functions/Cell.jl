@@ -383,24 +383,25 @@ function simulateLife!(cell::Cell, minimalMass::Float64, sizeProportion::Float64
         ########################################################################
         # CELL DIVISION
         # Update cell cycle model parameters based on current state
-        println(cell.cellcycle.cell_cycle_prob.p)
+        #println(cell.cellcycle.cell_cycle_prob.p)
         # solve around timestep
-        #cell.cellcycle.tspan=(0.9*timestep,timestep+1.5*timestep)
+        cell.cellcycle.tspan=(0.9*time,time+1.5*time)
         updateCellCycleParameters!(cell.cellcycle, cell.fba, cell.boolean)
-        println(cell.cellcycle.cell_cycle_prob.p)
-        
+        #println(cell.cellcycle.cell_cycle_prob.p)
         # Solve cell cycle ODE for one timestep
         cp1_index = findfirst( x -> x=="compartment_1", cell.cellcycle.p_names)
         cp1 = cell.cellcycle.porig[cp1_index]
         sol = solve(cell.cellcycle.cell_cycle_prob, Tsit5())
-        cell.cellcycle.u0 = cp1 .* sol(timestep) 
+        cell.cellcycle.u0 = cp1 .* sol(time) 
 
         # Check division based on cell cycle state
         if shouldDivide(cell.cellcycle)
+            println("SPLIT")
             division!(ode, sizeProportion, retention)
             rls += 1
             push!(divisionTimes, time)
-            reset_cell_cycle!(cell.cellcycle)  # Reset cycle after division
+            # Reset cycle after division
+            cell.cellcycle = initialiseCellCycleModel()
         end
 
         ########################################################################
@@ -503,34 +504,41 @@ function updateCellCycleParameters!(cellcycle::CellCycleModel, fba::FBAModel, bo
     
     # Growth-dependent parameters
     growth_rate = value(fba.model[:fluxes][findfirst(x -> x == "Growth", fba.reactionNames)])
-    println(growth_rate) 
+    #println(growth_rate) 
     
     # Update parameters based on FBA and Boolean states
     glucose_flux = value(fba.model[:fluxes][findfirst(x -> x == "Uptake of glucose", fba.reactionNames)])
-    println(glucose_flux) 
+    #println("kp_Cln3")
+    #println(cellcycle.p[index_kp_Cln3]) 
     cellcycle.p[index_kp_Cln3] = cellcycle.porig[index_kp_Cln3] * (1 + glucose_flux * growth_rate)
-
+    #println(cellcycle.p[index_kp_Cln3]) 
+    
     # What should this be?
     reference_mass = 1 
     
     protein_mass = value(fba.model[:pool])
-    println(protein_mass)
-    println(index_nutrition_factor)
-    println(reference_mass)
+    #println(protein_mass)
+    #println(index_nutrition_factor)
+    #println(reference_mass)
+    #println("nutrition_factor")
+    #println(cellcycle.p[index_nutrition_factor])
     cellcycle.p[index_nutrition_factor] = protein_mass / reference_mass
-
+    #println(cellcycle.p[index_nutrition_factor])
+    
     # Stress response affects multiple parameters
-    #stress_active = boolean.components[findfirst(x -> x.name == "Stress", boolean.components)].active
-    #if stress_active
-    #    cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] * stress_factor
-    #    cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] / stress_factor
-    #else
-    #    cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] 
-    #    cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] 
-    #end
+    println(boolean.components[findfirst(x -> x.name == "H2O2", boolean.components)].present)
+    stress_active = boolean.components[findfirst(x -> x.name == "H202", boolean.components)].present
+    stress_factor=0.9
+    if stress_active
+        cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] * stress_factor
+        cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] / stress_factor
+    else
+        cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] 
+        cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] 
+    end
 
     # Update the cell cycle ode problem
-    cellcycle.cell_cycle_prob = ODEProblem(structural_simplify(cellcycle.cell_cycle_sys), cellcycle.u0, cellcycle.tspan, cellcycle.p)
+    cellcycle.cell_cycle_prob = createCellCycleProblem(cellcycle.cell_cycle_sys, cellcycle.u0, cellcycle.tspan, cellcycle.p)
 end
 
 """
@@ -541,50 +549,13 @@ function shouldDivide(cellcycle::CellCycleModel)
     index_Clb2  = findfirst(x->x=="Clb2",cellcycle.u0_names)
     index_Cdc14 = findfirst(x->x=="Cdc14",cellcycle.u0_names)
     index_Sic1  = findfirst(x->x=="Sic1",cellcycle.u0_names)
-    
+     
+    #println("Clb2")
+    #println(cellcycle.u0[index_Clb2])
+    #println("Cdc14")
+    #println(cellcycle.u0[index_Cdc14])
+    #println("Sic1")
+    #println(cellcycle.u0[index_Sic1])
     # Check division conditions
-    return cellcycle.u0[index_Clb2] < 0.1 && cellcycle.u0[index_Cdc14] > 0.8 && cellcycle.u0[index_Sic1] > 0.5
-end
-
-"""
-Reset cell cycle state after division
-"""
-function reset_cell_cycle!(cellcycle::CellCycleModel)
-    # Get current states indices
-    index_Clb2  = findfirst(x->x=="Clb2",cellcycle.u0_names)
-    index_Clb5  = findfirst(x->x=="Clb5",cellcycle.u0_names)
-    index_Cln2  = findfirst(x->x=="Cln2",cellcycle.u0_names)
-    index_Cln3  = findfirst(x->x=="Cln3",cellcycle.u0_names)
-
-    index_Sic1  = findfirst(x->x=="Sic1",cellcycle.u0_names)
-    index_Far1  = findfirst(x->x=="Far1",cellcycle.u0_names)
-    index_Whi5  = findfirst(x->x=="Whi5",cellcycle.u0_names)
-    
-    index_SBF  = findfirst(x->x=="SBF",cellcycle.u0_names)
-    index_MBF  = findfirst(x->x=="MBF",cellcycle.u0_names)
-
-    index_Sic1_p  = findfirst(x->x=="Sic1_p",cellcycle.u0_names)
-    index_Far1_p  = findfirst(x->x=="Far1_p",cellcycle.u0_names)
-    index_Whi5_p  = findfirst(x->x=="Whi5_p",cellcycle.u0_names)
-
-    # Reset to G1 state
-    # Cyclins
-    cellcycle.u0[index_Clb2] = cellcycle.u0orig[index_Clb2] #0.0
-    cellcycle.u0[index_Clb5] = cellcycle.u0orig[index_Clb5] #0.0
-    cellcycle.u0[index_Cln2] = cellcycle.u0orig[index_Cln2] #0.0
-    cellcycle.u0[index_Cln3] = cellcycle.u0orig[index_Cln3]
-    
-    # Inhibitors and regulators
-    cellcycle.u0[index_Sic1] = cellcycle.u0orig[index_Sic1]
-    cellcycle.u0[index_Far1] = cellcycle.u0orig[index_Far1]
-    cellcycle.u0[index_Whi5] = cellcycle.u0orig[index_Whi5]
-    
-    # Transcription factors
-    cellcycle.u0[index_SBF] = cellcycle.u0orig[index_SBF] #0.0
-    cellcycle.u0[index_MBF] = cellcycle.u0orig[index_MBF] #0.0
-    
-    # Reset phosphorylation states
-    cellcycle.u0[index_Sic1_p] = cellcycle.u0orig[index_Sic1_p] #0.0
-    cellcycle.u0[index_Far1_p] = cellcycle.u0orig[index_Far1_p] #0.0
-    cellcycle.u0[index_Whi5_p] = cellcycle.u0orig[index_Whi5_p] #0.0
+    return cellcycle.u0[index_Clb2] < 0.24 && cellcycle.u0[index_Cdc14] > 3400 && cellcycle.u0[index_Sic1] > 300
 end

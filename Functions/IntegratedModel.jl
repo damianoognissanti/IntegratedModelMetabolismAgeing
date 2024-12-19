@@ -4,6 +4,7 @@ using Gurobi
 using DelimitedFiles
 using Statistics
 using ModelingToolkit
+using OrdinaryDiffEq 
 
 include("InitialiseJuMPModel.jl")
 include("FBA.jl")
