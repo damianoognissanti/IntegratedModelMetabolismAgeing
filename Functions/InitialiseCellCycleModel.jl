@@ -1,13 +1,14 @@
 mutable struct CellCycleModel
     cell_cycle_sys::ODESystem
     cell_cycle_prob::ODEProblem
-    p::Array
-    u0::Array
     p_names::Array
     u0_names::Array
+    p::Array
+    u0::Array
     tspan::Tuple
     porig::Array
     u0orig::Array
+    tspanorig::Tuple
 end
 
 function initialiseCellCycleModel()
@@ -318,9 +319,59 @@ function initialiseCellCycleModel()
        "Sic1_p"
     ]
 
-cell_cycle_sys = createCellCycleModel()
-    tspan=(1,350)
-    cell_cycle_prob = createCellCycleProblem(cell_cycle_sys, u0orig, tspan, porig)  
+    cell_cycle_sys = createCellCycleModel()
+    tspanorig = (1,350)
+    cell_cycle_prob = createCellCycleProblem(cell_cycle_sys, u0orig, tspanorig, porig)
 
-    return CellCycleModel(cell_cycle_sys, cell_cycle_prob, porig, u0orig, p_names, u0_names, tspan, porig, u0orig)
+    return CellCycleModel(cell_cycle_sys, cell_cycle_prob, p_names, u0_names, deepcopy(porig), deepcopy(u0orig), deepcopy(tspanorig), porig, u0orig, tspanorig)
+
+end
+
+function getCCParamIndex(cellcycle::CellCycleModel, name)
+    return findfirst(x->x==name, cellcycle.p_names)
+end
+
+function getCCStateIndex(cellcycle::CellCycleModel, name)
+    return findfirst(x->x==name, cellcycle.u0_names)
+end
+
+function getCCParamValue(cellcycle::CellCycleModel, name)
+    return cellcycle.p[getCCParamIndex(cellcycle, name)]
+end
+
+function getCCStateValue(cellcycle::CellCycleModel, name)
+    return cellcycle.u0[getCCStateIndex(cellcycle, name)]
+end
+
+function getCCParamOrigValue(cellcycle::CellCycleModel, name)
+    return cellcycle.porig[getCCParamIndex(cellcycle, name)]
+end
+
+function getCCStateOrigValue(cellcycle::CellCycleModel, name)
+    return cellcycle.u0orig[getCCStateIndex(cellcycle, name)]
+end
+
+function setCCParamValue(cellcycle::CellCycleModel, name, value)
+    cellcycle.p[getCCParamIndex(cellcycle, name)] = value
+    return 
+end
+
+function setCCStateValue(cellcycle::CellCycleModel, name, value)
+    cellcycle.u0[getCCStateIndex(cellcycle, name)] = value
+    return
+end
+
+function updateCCProblem(cellcycle::CellCycleModel)
+    # Updates cell cycle ode problem with current values set
+    cellcycle.cell_cycle_prob = createCellCycleProblem(cellcycle.cell_cycle_sys, cellcycle.u0, cellcycle.tspan, cellcycle.p)  
+    return
+end
+
+function resetCCProblem(cellcycle::CellCycleModel)
+    # Updates cell cycle ode problem with original values set
+    cellcycle.u0=deepcopy(cellcycle.u0orig)
+    cellcycle.p=deepcopy(cellcycle.porig)
+    cellcycle.tspan=deepcopy(cellcycle.tspanorig)
+    cellcycle.cell_cycle_prob = createCellCycleProblem(cellcycle.cell_cycle_sys, cellcycle.u0, cellcycle.tspan, cellcycle.p)  
+    return
 end

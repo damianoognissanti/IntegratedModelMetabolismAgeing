@@ -383,20 +383,17 @@ function simulateLife!(cell::Cell, minimalMass::Float64, sizeProportion::Float64
         ########################################################################
         # CELL DIVISION
         # Update cell cycle model parameters based on current state
-        #println(cell.cellcycle.cell_cycle_prob.p)
         # solve around timestep
         cell.cellcycle.tspan=(0.9*time,time+1.5*time)
         updateCellCycleParameters!(cell.cellcycle, cell.fba, cell.boolean)
-        #println(cell.cellcycle.cell_cycle_prob.p)
         # Solve cell cycle ODE for one timestep
-        cp1_index = findfirst( x -> x=="compartment_1", cell.cellcycle.p_names)
-        cp1 = cell.cellcycle.porig[cp1_index]
+        cp1 = getCCParamValue(cell.cellcycle, "compartment_1")
         sol = solve(cell.cellcycle.cell_cycle_prob, Tsit5())
         cell.cellcycle.u0 = cp1 .* sol(time) 
 
         # Check division based on cell cycle state
         if shouldDivide(cell.cellcycle)
-            println("SPLIT")
+            #println("SPLIT")
             division!(ode, sizeProportion, retention)
             rls += 1
             push!(divisionTimes, time)
@@ -489,73 +486,41 @@ function simulateLife!(cell::Cell, minimalMass::Float64, sizeProportion::Float64
 
 end
 
-# New helper functions for cell cycle integration
-
-"""
-Update cell cycle parameters based on FBA and Boolean states
-"""
 function updateCellCycleParameters!(cellcycle::CellCycleModel, fba::FBAModel, boolean::BooleanModel)
-    
-    # Indices of the parameters we wish to change
-    index_kp_Cln3 = findfirst(x->x=="kp_Cln3",cellcycle.p_names)
-    index_nutrition_factor = findfirst(x->x=="nutrition_factor",cellcycle.p_names)
-    index_kp_Far1 = findfirst(x->x=="kp_Far1",cellcycle.p_names)
-    index_kp_Cln2 = findfirst(x->x=="kp_Cln2",cellcycle.p_names)
-    
+    ########################################################################
+    # Update cell cycle parameters based on FBA and Boolean states
+    #println(getCCParamValue(cellcycle, "kp_Cln3"))
+    #println(getCCParamValue(cellcycle, "nutrition_factor"))
+ 
     # Growth-dependent parameters
     growth_rate = value(fba.model[:fluxes][findfirst(x -> x == "Growth", fba.reactionNames)])
-    #println(growth_rate) 
-    
     # Update parameters based on FBA and Boolean states
     glucose_flux = value(fba.model[:fluxes][findfirst(x -> x == "Uptake of glucose", fba.reactionNames)])
-    #println("kp_Cln3")
-    #println(cellcycle.p[index_kp_Cln3]) 
-    cellcycle.p[index_kp_Cln3] = cellcycle.porig[index_kp_Cln3] * (1 + glucose_flux * growth_rate)
-    #println(cellcycle.p[index_kp_Cln3]) 
+    setCCParamValue(cellcycle, "kp_Cln3", getCCParamOrigValue(cellcycle, "kp_Cln3") * (1 + glucose_flux * growth_rate))
     
     # What should this be?
     reference_mass = 1 
     
     protein_mass = value(fba.model[:pool])
-    #println(protein_mass)
-    #println(index_nutrition_factor)
-    #println(reference_mass)
-    #println("nutrition_factor")
-    #println(cellcycle.p[index_nutrition_factor])
-    cellcycle.p[index_nutrition_factor] = protein_mass / reference_mass
-    #println(cellcycle.p[index_nutrition_factor])
-    
-    # Stress response affects multiple parameters
-    println(boolean.components[findfirst(x -> x.name == "H2O2", boolean.components)].present)
-    stress_active = boolean.components[findfirst(x -> x.name == "H202", boolean.components)].present
-    stress_factor=0.9
-    if stress_active
-        cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] * stress_factor
-        cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] / stress_factor
-    else
-        cellcycle.p[index_kp_Far1] = cellcycle.porig[index_kp_Far1] 
-        cellcycle.p[index_kp_Cln2] = cellcycle.porig[index_kp_Cln2] 
-    end
+    setCCParamValue(cellcycle, "nutrition_factor", protein_mass / reference_mass)
 
+    # Stress response affects multiple parameters
+    #stress_active = boolean.components[findfirst(x -> x.name == "H202", boolean.components)].present
+    #stress_factor=0.9
+    #if stress_active
+    #    setCCParamValue(cellcycle, "kp_Far1", getCCParamOrigValue(cellcycle, "kp_Far1") * stress_factor )
+    #    setCCParamValue(cellcycle, "kp_Cln2", getCCParamOrigValue(cellcycle, "kp_Cln2") / stress_factor )
+    #else
+    #    setCCParamValue(cellcycle, "kp_Far1", getCCParamOrigValue(cellcycle, "kp_Far1"))
+    #    setCCParamValue(cellcycle, "kp_Cln2", getCCParamOrigValue(cellcycle, "kp_Cln2"))
+    #end
+     
     # Update the cell cycle ode problem
-    cellcycle.cell_cycle_prob = createCellCycleProblem(cellcycle.cell_cycle_sys, cellcycle.u0, cellcycle.tspan, cellcycle.p)
+    updateCCProblem(cellcycle)
 end
 
-"""
-Check if cell should divide based on cell cycle state
-"""
 function shouldDivide(cellcycle::CellCycleModel)
-    # Get current states indices
-    index_Clb2  = findfirst(x->x=="Clb2",cellcycle.u0_names)
-    index_Cdc14 = findfirst(x->x=="Cdc14",cellcycle.u0_names)
-    index_Sic1  = findfirst(x->x=="Sic1",cellcycle.u0_names)
-     
-    #println("Clb2")
-    #println(cellcycle.u0[index_Clb2])
-    #println("Cdc14")
-    #println(cellcycle.u0[index_Cdc14])
-    #println("Sic1")
-    #println(cellcycle.u0[index_Sic1])
-    # Check division conditions
-    return cellcycle.u0[index_Clb2] < 0.24 && cellcycle.u0[index_Cdc14] > 3400 && cellcycle.u0[index_Sic1] > 300
+    ########################################################################
+    # Check if certain states are above / below threshold values
+    return getCCStateValue(cellcycle,"Clb2") < 0.24 && getCCStateValue(cellcycle,"Cdc14") > 3400 && getCCStateValue(cellcycle,"Sic1") > 300
 end

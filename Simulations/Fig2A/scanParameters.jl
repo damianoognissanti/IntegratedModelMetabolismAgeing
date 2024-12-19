@@ -61,6 +61,7 @@ for n = 1 : nCombinations
     output[:, n] = [tmpFormationRate; tmpRepairRate; tmpRegulation;
                     rls; averageGenerationTime; phaseSplit[1]; 
                     phaseSplit[2]; phaseSplit[3]; status]
+    println(output[:,n])
 end
 
 
